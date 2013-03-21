@@ -77,10 +77,10 @@ With the `do_text`, `do_object`, `do_grep` and `do_glyph` you can define if the 
 ###CAN HAVE Settings
 In the `[text]`,`[grep]`,`[glyph]` and `[objects]` areas you can define the filenames that should be processed. Make sure the filenames are written right. If there is a file mentioned that does not exist the script will throw an error. It will try to process all the .xml files it can find. __!IMPORTANT!__ you MUST remove the .xml from the filename in the list as shown above.
 
-###FAQ  
+##FAQ  
 Nothing yet. Feel free to ask and report issues ;)  
 
-###License
+##License
 All code is under MIT License
 Copyright (c)  2013 Fabian "fabiantheblind" Morón Zirfas  
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software  without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to  permit persons to whom the Software is furnished to do so, subject to the following conditions:  
