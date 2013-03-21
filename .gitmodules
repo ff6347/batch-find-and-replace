@@ -1,0 +1,6 @@
+[submodule "src/submodules/tomljs"]
+	path = src/submodules/tomljs
+	url = git@github.com:fabiantheblind/tomljs.git
+[submodule "src/submodules/JsonDiffPatch"]
+	path = src/submodules/JsonDiffPatch
+	url = git@github.com:fabiantheblind/JsonDiffPatch.git
