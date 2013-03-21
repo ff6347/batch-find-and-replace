@@ -9,9 +9,9 @@ do_object = false
 # the toml specs say you can break lines in arrays
 # but the toml.js does not allow that at the moment
 [text]
-files = ["bfnr_text_1"]
+files = ["my_first_text_find_and_change","another one"]
 [grep]
-files = ["bfnr_test1", "bfnr_test2", "bfnr_test3"]
+files = ["somegrepsearch", "find tabs", "something else"]
 [glyph]
 files = []
 [objects]
