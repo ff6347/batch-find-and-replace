@@ -86,8 +86,8 @@ if(tomltxt !==null){
 // http://forums.adobe.com/message/5228290#5228290
 var doc = null;
 if(bfnr.settings.do_all_docs === true){
-  for(var i = 0; i < app.documents.length;i++){
-    doc = app.documents[i];
+  for(var d = 0; d < app.documents.length;d++){
+    doc = app.documents[d];
     if(doc !== null){
     run_processor(doc, bfnr);
     }
