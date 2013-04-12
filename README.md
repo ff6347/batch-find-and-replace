@@ -4,6 +4,7 @@ batch-find-and-replace
 This is a Adobe InDesign script for batch processing find and replace xmls. You can process
 GREP, TEXT, GLYPH and OBJECT searches.  
 @author: fabiantheblind  
+@version: 0.1.1
 
 Thanks go to:  
 - [Tom's Obvious, Minimal Language](https://github.com/mojombo/toml) By [Tom Preston-Werner](https://github.com/mojombo)  
@@ -59,6 +60,7 @@ The basic toml filer looks like this:
     do_grep = true
     do_glyph = true
     do_object = false
+    do_all_docs = true
     # now the file names
     # they have to be in one line
     # the toml specs say you can break lines in arrays
@@ -73,12 +75,23 @@ The basic toml filer looks like this:
     files = []
 
 ###MUST HAVE Settings
-With the `do_text`, `do_object`, `do_grep` and `do_glyph` you can define if the script should do the corresponding find and replace. Set them to `true` or `false`.
+With the `do_text`, `do_object`, `do_grep` and `do_glyph` you can define if the script should do the corresponding find and replace. Set them to `true` or `false`.  
+With the `do_all_docs` setting you can define to use just the front most document or all open documents. Set it to `true` if you want to process all open documents.  
+
 ###CAN HAVE Settings
 In the `[text]`,`[grep]`,`[glyph]` and `[objects]` areas you can define the filenames that should be processed. Make sure the filenames are written right. If there is a file mentioned that does not exist the script will throw an error. It will try to process all the .xml files it can find. __!IMPORTANT!__ you MUST remove the .xml from the filename in the list as shown above.
 
 ##FAQ  
 Nothing yet. Feel free to ask and report issues ;)  
+
+##Version History  
+
+- 0.1.1 Added do all docs feature  
+- 0.1 initial release  
+
+##To Dos  
+
+- Make it work with InDesign Books or an folder of InDesign docs.  
 
 ##License
 All code is under MIT License
