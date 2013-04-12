@@ -142,7 +142,7 @@ for(var i = 0; i < list.length;i++){
     doc.changeText();
     }
   }catch(e){
-    alert(e);
+    alert('There was an error while processing the changeText command\n' + e);
   }
     try{
 
@@ -150,7 +150,7 @@ for(var i = 0; i < list.length;i++){
     doc.changeGrep();
     }
       }catch(e){
-    alert(e);
+    alert('There was an error while processing the changeGrep command\n' + e);
   }
       try{
 
@@ -158,7 +158,7 @@ for(var i = 0; i < list.length;i++){
     doc.changeObject();
     }
       }catch(e){
-    alert(e);
+    alert('There was an error while processing the changeObject command\n' + e);
   }
       try{
 
@@ -166,7 +166,7 @@ for(var i = 0; i < list.length;i++){
     doc.changeGlyph();
     }
   }catch(e){
-    alert(e);
+    alert('There was an error while processing the changeGlyph command\n' + e);
     }
   }
 }
