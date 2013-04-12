@@ -44,6 +44,10 @@
 **************************************************/
 
 bfnr_run();
+/**
+ * [bfnr_run description]
+ * @return {[type]} [description]
+ */
 function bfnr_run(){
 var path = ((File($.fileName)).path);
 
@@ -56,13 +60,14 @@ $.evalFile(File(path +'/submodules/JsonDiffPatch/src/jsondiffpatch.js')); // htt
  * @type {Object}
  */
 var bfnr = {
-  'version':'0.1',
+  'version':'0.1.1',
   'toml':null,
   'settings':{
   'do_text':false,
   'do_grep':false,
   'do_glyph':false,
-  'do_object':false
+  'do_object':false,
+  'do_all_docs':true
   }
 };
 // lets get the data
@@ -77,8 +82,32 @@ if(tomltxt !==null){
   // alert(bfnr.settings.toSource());
 }
 
+// this is written for mirna to work on all of her docs ;)
+// http://forums.adobe.com/message/5228290#5228290
+var doc = null;
+if(bfnr.settings.do_all_docs === true){
+  for(var i = 0; i < app.documents.length;i++){
+    doc = app.documents[i];
+    if(doc !== null){
+    run_processor(doc, bfnr);
+    }
+  }
 
-var doc = app.activeDocument;
+}else{
+  doc = app.activeDocument;
+  if(doc !== null){
+    run_processor(doc, bfnr);
+  }
+}
+
+} // end of run function
+/**
+ * [run_processor description]
+ * @param  {[type]} doc  [description]
+ * @param  {[type]} bfnr [description]
+ * @return {[type]}      [description]
+ */
+function run_processor(doc, bfnr){
 if(bfnr.settings.do_text === true){
   processor(doc, SearchModes.TEXT_SEARCH, bfnr.toml.text.files);
 }
@@ -91,8 +120,14 @@ if(bfnr.settings.do_glyph === true){
 if(bfnr.settings.do_object === true){
   processor(doc, SearchModes.OBJECT_SEARCH, bfnr.toml.objects.files);
 }
-} // end of run function
-
+}
+/**
+ * [processor description]
+ * @param  {[type]} doc  [description]
+ * @param  {[type]} mode [description]
+ * @param  {[type]} list [description]
+ * @return {[type]}      [description]
+ */
 function processor(doc, mode, list){
 for(var i = 0; i < list.length;i++){
   try{
