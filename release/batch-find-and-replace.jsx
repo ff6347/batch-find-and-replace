@@ -132,22 +132,41 @@ function processor(doc, mode, list){
 for(var i = 0; i < list.length;i++){
   try{
   app.loadFindChangeQuery (list[i], mode);
+  }catch(e){
+    alert('There was an error while trying to process the "' + list[i]+'.xml"\n'+
+      'Please make sure it exists and is at the right spot\n'+
+      e);
+    }
+  try{
   if(mode == SearchModes.TEXT_SEARCH){
     doc.changeText();
     }
+  }catch(e){
+    alert(e);
+  }
+    try{
+
   if(mode == SearchModes.GREP_SEARCH){
     doc.changeGrep();
     }
+      }catch(e){
+    alert(e);
+  }
+      try{
+
   if(mode == SearchModes.OBJECT_SEARCH){
     doc.changeObject();
     }
+      }catch(e){
+    alert(e);
+  }
+      try{
+
   if(mode == SearchModes.GLYPH_SEARCH){
     doc.changeGlyph();
     }
   }catch(e){
-    alert('There was an error while trying to process the "' + list[i]+'.xml"\n'+
-      'Please make shure it exists and is at the right spot\n'+
-      e);
+    alert(e);
     }
   }
 }
