@@ -130,6 +130,7 @@ if(bfnr.settings.do_object === true){
  */
 function processor(doc, mode, list){
 for(var i = 0; i < list.length;i++){
+
   try{
   app.loadFindChangeQuery (list[i], mode);
   }catch(e){
@@ -139,6 +140,7 @@ for(var i = 0; i < list.length;i++){
     }
   try{
   if(mode == SearchModes.TEXT_SEARCH){
+    empty_fc_fields(mode);
     doc.changeText();
     }
   }catch(e){
@@ -147,6 +149,7 @@ for(var i = 0; i < list.length;i++){
     try{
 
   if(mode == SearchModes.GREP_SEARCH){
+    empty_fc_fields(mode);
     doc.changeGrep();
     }
       }catch(e){
@@ -155,6 +158,7 @@ for(var i = 0; i < list.length;i++){
       try{
 
   if(mode == SearchModes.OBJECT_SEARCH){
+    empty_fc_fields(mode);
     doc.changeObject();
     }
       }catch(e){
@@ -163,6 +167,7 @@ for(var i = 0; i < list.length;i++){
       try{
 
   if(mode == SearchModes.GLYPH_SEARCH){
+    empty_fc_fields(mode);
     doc.changeGlyph();
     }
   }catch(e){
@@ -194,6 +199,34 @@ function readfile(type, path){
     alert('Error reading file');
     return null;
   }
+}
+
+
+function empty_fc_fields(mode){
+
+  if(mode == SearchModes.TEXT_SEARCH){
+  app.findTextPreferences = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
+  app.changeTextPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
+    
+  }
+  if(mode == SearchModes.GREP_SEARCH){
+
+  app.findGrepPreferences = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
+  app.changeGrepPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
+    
+  }
+  if(mode == SearchModes.GLYPH_SEARCH){
+  app.findGlyphPreference = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
+  app.changeGlyphPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
+    
+  }
+
+  if(mode == SearchModes.OBJECT_SEARCH){
+  app.findObjectPreference = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
+  app.changeObjectPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
+    
+  }
+
 }
   //  _______ ____  __  __ _      _____        _____   _____ ______ 
   // |__   __/ __ \|  \/  | |    |  __ \ /\   |  __ \ / ____|  ____|
