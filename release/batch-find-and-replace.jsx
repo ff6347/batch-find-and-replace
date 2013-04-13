@@ -132,47 +132,47 @@ function processor(doc, mode, list){
 for(var i = 0; i < list.length;i++){
 
   try{
+    empty_fc_fields(mode);
   app.loadFindChangeQuery (list[i], mode);
   }catch(e){
     alert('There was an error while trying to process the "' + list[i]+'.xml"\n'+
       'Please make sure it exists and is at the right spot\n'+
       e);
     }
-  try{
+  // try{
   if(mode == SearchModes.TEXT_SEARCH){
-    empty_fc_fields(mode);
     doc.changeText();
     }
-  }catch(e){
-    alert('There was an error while processing the changeText command\n' + e);
-  }
-    try{
+  // }catch(e){
+  //   alert('There was an error while processing the changeText command\n' + e);
+  // }
+  //   try{
 
   if(mode == SearchModes.GREP_SEARCH){
-    empty_fc_fields(mode);
+    // empty_fc_fields(mode);
     doc.changeGrep();
     }
-      }catch(e){
-    alert('There was an error while processing the changeGrep command\n' + e);
-  }
-      try{
+  //     }catch(e){
+  //   alert('There was an error while processing the changeGrep command\n' + e);
+  // }
+  //     try{
 
   if(mode == SearchModes.OBJECT_SEARCH){
-    empty_fc_fields(mode);
+    // empty_fc_fields(mode);
     doc.changeObject();
     }
-      }catch(e){
-    alert('There was an error while processing the changeObject command\n' + e);
-  }
-      try{
+  //     }catch(e){
+  //   alert('There was an error while processing the changeObject command\n' + e);
+  // }
+  //     try{
 
   if(mode == SearchModes.GLYPH_SEARCH){
-    empty_fc_fields(mode);
+    // empty_fc_fields(mode);
     doc.changeGlyph();
     }
-  }catch(e){
-    alert('There was an error while processing the changeGlyph command\n' + e);
-    }
+  // }catch(e){
+  //   alert('There was an error while processing the changeGlyph command\n' + e);
+  //   }
   }
 }
 /**
