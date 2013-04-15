@@ -86,12 +86,13 @@ if(tomltxt !==null){
 // http://forums.adobe.com/message/5228290#5228290
 var doc = null;
 if(bfnr.settings.do_all_docs === true){
-  for(var d = 0; d < app.documents.length;d++){
-    doc = app.documents[d];
-    if(doc !== null){
-    run_processor(doc, bfnr);
-    }
-  }
+alert("Sorry processing several docs is disabled for the moment until an issue is fixed.\nAs a workaround use:\ndoScriptWithDocsOfBooks.jsx \nfrom here:\nhttp://indesign.hilfdirselbst.ch/oberflache/skript-in-allen-dokumenten-der-geoffneten-buchern-ausfuhren.html");
+  // for(var d = 0; d < app.documents.length;d++){
+  //   doc = app.documents[d];
+  //   if(doc !== null){
+  //   run_processor(doc, bfnr);
+  //   }
+  // }
 
 }else{
   doc = app.activeDocument;
