@@ -45,7 +45,7 @@
 
 
 /**
- * [bfnr_run description]
+ * This runs the full script
  * @return {[type]} [description]
  */
 function bfnr_run(){
@@ -60,7 +60,7 @@ var path = ((File($.fileName)).path);
  * @type {Object}
  */
 var bfnr = {
-  'version':'0.1.1',
+  'version':'0.1.2',
   'toml':null,
   'settings':{
   'do_text':false,
