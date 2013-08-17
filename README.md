@@ -92,6 +92,7 @@ Nothing yet. Feel free to ask and report issues ;)
 ##To Dos  
 
 - Make it work with InDesign Books or an folder of InDesign docs.  
+- add support for several docs
 
 ##License
 All code is under MIT License
