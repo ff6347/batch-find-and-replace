@@ -6,7 +6,7 @@ GREP, TEXT, GLYPH and OBJECT searches.
 @author: fabiantheblind  
 @version: 0.1.1
 
-Thanks go to:  
+Thanks go to:   
 - [Tom's Obvious, Minimal Language](https://github.com/mojombo/toml) By [Tom Preston-Werner](https://github.com/mojombo)  
 - [toml.js]( https://github.com/JonAbrams/tomljs) by [JonAbrams](https://github.com/JonAbrams)  
 - [JsonDiffPatch.js](https://github.com/benjamine/JsonDiffPatch) by [benjamine](https://github.com/benjamine)   
