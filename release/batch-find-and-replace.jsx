@@ -6,12 +6,12 @@
 ****************************************************
 * Copyright (c)  2013
 * Fabian "fabiantheblind" Morón Zirfas
-* Permission is hereby granted, free of charge, to any 
+* Permission is hereby granted, free of charge, to any
 * person obtaining a copy of this software and associated
 * documentation files (the "Software"), to deal in the Software
-* without restriction, including without limitation the rights 
+* without restriction, including without limitation the rights
 * to use, copy, modify, merge, publish, distribute, sublicense,
-* and/or sell copies of the Software, and to  permit persons to 
+* and/or sell copies of the Software, and to  permit persons to
 * whom the Software is furnished to do so, subject to
 * the following conditions:
 * The above copyright notice and this permission notice
@@ -32,7 +32,7 @@
 ****************************************************
 * there are some js libraries used
 * ----------------------------------------------
-* a toml (Tom's Obvious, Minimal Language) parser https://github.com/mojombo/toml 
+* a toml (Tom's Obvious, Minimal Language) parser https://github.com/mojombo/toml
 * by JonAbrams https://github.com/JonAbrams/tomljs
 * ----------------------------------------------
 * ----------------------------------------------
@@ -41,204 +41,7 @@
 * Diff & Patch for JavaScript objects and arrays
 * (ie. any JSON serializable structure)
 * https://github.com/benjamine/JsonDiffPatch
-**************************************************/
-
-
-/**
- * This runs the full script
- * @return {[type]} [description]
- */
-function bfnr_run(){
-var path = ((File($.fileName)).path);
-
-// $.evalFile(File(path + '/submodules/tomljs/toml.js'));// https://github.com/JonAbrams/tomljs
-
-// $.evalFile(File(path +'/submodules/JsonDiffPatch/src/jsondiffpatch.js')); // https://github.
-
-/**
- * the settings
- * @type {Object}
- */
-var bfnr = {
-  'version':'0.1.2',
-  'toml':null,
-  'settings':{
-  'do_text':false,
-  'do_grep':false,
-  'do_glyph':false,
-  'do_object':false,
-  'do_all_docs':true
-  }
-};
-// lets get the data
-var tomltxt = readfile('toml', path);
-if(tomltxt !==null){
-  // diff and patch the settings
-  // 
-  bfnr.toml = TOML.parse(tomltxt);
-  var delta = jsondiffpatch.diff(bfnr.settings, bfnr.toml);
-  // alert(delta.toSource());
-  jsondiffpatch.patch(bfnr.settings, delta);
-  // alert(bfnr.settings.toSource());
-}
-
-// this is written for mirna to work on all of her docs ;)
-// http://forums.adobe.com/message/5228290#5228290
-var doc = null;
-if(bfnr.settings.do_all_docs === true){
-alert("Sorry processing several docs is disabled for the moment until an issue is fixed.\nAs a workaround use:\ndoScriptWithDocsOfBooks.jsx \nfrom here:\nhttp://indesign.hilfdirselbst.ch/oberflache/skript-in-allen-dokumenten-der-geoffneten-buchern-ausfuhren.html");
-  // for(var d = 0; d < app.documents.length;d++){
-  //   doc = app.documents[d];
-  //   if(doc !== null){
-  //   run_processor(doc, bfnr);
-  //   }
-  // }
-
-}else{
-  doc = app.activeDocument;
-  if(doc !== null){
-    run_processor(doc, bfnr);
-  }
-}
-
-} // end of run function
-/**
- * [run_processor description]
- * @param  {[type]} doc  [description]
- * @param  {[type]} bfnr [description]
- * @return {[type]}      [description]
- */
-function run_processor(doc, bfnr){
-if(bfnr.settings.do_text === true){
-  processor(doc, SearchModes.TEXT_SEARCH, bfnr.toml.text.files);
-}
-if(bfnr.settings.do_grep === true){
-  processor(doc, SearchModes.GREP_SEARCH, bfnr.toml.grep.files);
-}
-if(bfnr.settings.do_glyph === true){
-  processor(doc, SearchModes.GLYPH_SEARCH, bfnr.toml.glyph.files);
-}
-if(bfnr.settings.do_object === true){
-  processor(doc, SearchModes.OBJECT_SEARCH, bfnr.toml.objects.files);
-}
-}
-/**
- * [processor description]
- * @param  {[type]} doc  [description]
- * @param  {[type]} mode [description]
- * @param  {[type]} list [description]
- * @return {[type]}      [description]
- */
-function processor(doc, mode, list){
-for(var i = 0; i < list.length;i++){
-
-  try{
-    empty_fc_fields(mode);
-  app.loadFindChangeQuery (list[i], mode);
-  }catch(e){
-    alert('There was an error while trying to process the "' + list[i]+'.xml"\n'+
-      'Please make sure it exists and is at the right spot\n'+
-      e);
-    }
-  // try{
-  if(mode == SearchModes.TEXT_SEARCH){
-    doc.changeText();
-    }
-  // }catch(e){
-  //   alert('There was an error while processing the changeText command\n' + e);
-  // }
-  //   try{
-
-  if(mode == SearchModes.GREP_SEARCH){
-    // empty_fc_fields(mode);
-    doc.changeGrep();
-    }
-  //     }catch(e){
-  //   alert('There was an error while processing the changeGrep command\n' + e);
-  // }
-  //     try{
-
-  if(mode == SearchModes.OBJECT_SEARCH){
-    // empty_fc_fields(mode);
-    doc.changeObject();
-    }
-  //     }catch(e){
-  //   alert('There was an error while processing the changeObject command\n' + e);
-  // }
-  //     try{
-
-  if(mode == SearchModes.GLYPH_SEARCH){
-    // empty_fc_fields(mode);
-    doc.changeGlyph();
-    }
-  // }catch(e){
-  //   alert('There was an error while processing the changeGlyph command\n' + e);
-  //   }
-  }
-}
-/**
- * basic file reading function
- * @param  {String} type the type of file
- * @return {String or null}
- */
-function readfile(type, path){
-  var file_to_read = null;
-  file_to_read = File(path + '/' + 'batch-find-and-replace.toml');
-  if(file_to_read.exists !== true){
-    file_to_read = File.openDialog("Select a "+type+" file to import.", "*."+type,false);
-  }
-
-  var txt = null;
-  if (file_to_read !== null) {
-    file_to_read.open('r','TEXT','????');
-    txt = file_to_read.read();
-    file_to_read.close();
-  }
-  if(txt !== null){
-    return txt;
-  }else{
-    alert('Error reading file');
-    return null;
-  }
-}
-
-
-function empty_fc_fields(mode){
-
-  if(mode == SearchModes.TEXT_SEARCH){
-  app.findTextPreferences = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
-  app.changeTextPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
-    
-  }
-  if(mode == SearchModes.GREP_SEARCH){
-
-  app.findGrepPreferences = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
-  app.changeGrepPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
-    
-  }
-  if(mode == SearchModes.GLYPH_SEARCH){
-  app.findGlyphPreference = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
-  app.changeGlyphPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
-    
-  }
-
-  if(mode == SearchModes.OBJECT_SEARCH){
-  app.findObjectPreference = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
-  app.changeObjectPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
-    
-  }
-
-}
-  //  _______ ____  __  __ _      _____        _____   _____ ______ 
-  // |__   __/ __ \|  \/  | |    |  __ \ /\   |  __ \ / ____|  ____|
-  //    | | | |  | | \  / | |    | |__) /  \  | |__) | (___ | |__   
-  //    | | | |  | | |\/| | |    |  ___/ /\ \ |  _  / \___ \|  __|  
-  //    | | | |__| | |  | | |____| |  / ____ \| | \ \ ____) | |____ 
-  //    |_|  \____/|_|  |_|______|_| /_/    \_\_|  \_\_____/|______|
-                                                                 
-                                                                 
-// ********************************************************************************
-// Generated by CoffeeScript 1.5.0
+**************************************************/// Generated by CoffeeScript 1.5.0
 // minimal edit to make it usable by extendscript
 var getVal;
 
@@ -355,19 +158,6 @@ getVal = function(valStr, strTokens) {
   }
   return null;
 };
-
-
-  //       _  _____  ____  _   _ _____ _____ ______ ______ 
-  //      | |/ ____|/ __ \| \ | |  __ \_   _|  ____|  ____|
-  //      | | (___ | |  | |  \| | |  | || | | |__  | |__   
-  //  _   | |\___ \| |  | | . ` | |  | || | |  __| |  __|  
-  // | |__| |____) | |__| | |\  | |__| || |_| |    | |     
-  //  \____/|_____/ \____/|_| \_|_____/_____|_|    |_|     
-                                                        
-                                                        
-
-// ********************************************************************************
-
 /*
 *   Json Diff Patch
 *   ---------------
@@ -506,7 +296,7 @@ getVal = function(valStr, strTokens) {
                 if (indexOnArray2 < 0) {
                     // added, try to match with a removed item and register as position move
                     var isMove = false;
-                    if (jdp.config.detectArrayMove) {                        
+                    if (jdp.config.detectArrayMove) {
                         if (removedItemsLength > 0) {
                             for (index1 = 0; index1 < removedItemsLength; index1++) {
                                 if (areTheSameByIndex(removedItems[index1], index)) {
@@ -685,7 +475,7 @@ getVal = function(valStr, strTokens) {
             var len1 = array1.length;
             var len2 = array2.length;
             var x, y;
-            
+
             // initialize empty matrix of len1+1 x len2+1
             var matrix = [len1 + 1];
             for (x = 0; x < len1 + 1; x++) {
@@ -745,10 +535,10 @@ getVal = function(valStr, strTokens) {
         }
         return value;
     };
-    
+
     var diff_match_patch_autoconfig = function(){
         var dmp;
-        
+
         if (jdp.config.diff_match_patch) {
             dmp = new jdp.config.diff_match_patch.diff_match_patch();
         }
@@ -760,7 +550,7 @@ getVal = function(valStr, strTokens) {
                 dmp = new diff_match_patch.diff_match_patch();
             }
         }
-        
+
         if (dmp) {
             jdp.config.textDiff = function(txt1, txt2){
                 return dmp.patch_toText(dmp.patch_make(txt1, txt2));
@@ -795,11 +585,11 @@ getVal = function(valStr, strTokens) {
     };
 
     var objectDiff = function(o, n){
-    
+
         var odiff, pdiff, prop, addPropDiff;
-        
+
         addPropDiff = function(name){
-            
+
             pdiff = diff(o[name], n[name]);
             if (typeof pdiff != 'undefined') {
                 if (typeof odiff == 'undefined') {
@@ -808,7 +598,7 @@ getVal = function(valStr, strTokens) {
                 odiff[name] = pdiff;
             }
         };
-        
+
         for (prop in n) {
             if (n.hasOwnProperty(prop)) {
                 addPropDiff(prop);
@@ -823,10 +613,10 @@ getVal = function(valStr, strTokens) {
         }
         return odiff;
     };
-    
+
     var diff = jdp.diff = function(o, n){
         var ntype, otype, nnull, onull, d;
-        
+
         if (o === n) {
             return;
         }
@@ -851,7 +641,7 @@ getVal = function(valStr, strTokens) {
                 }
             }
         }
-        
+
         if (nnull || onull || ntype == 'undefined' || ntype != otype ||
         ntype == 'number' ||
         otype == 'number' ||
@@ -903,16 +693,16 @@ getVal = function(valStr, strTokens) {
             }
         }
     };
-    
+
     var objectGet = function(obj, key){
         if (isArray(obj)) {
             return obj[parseInt(key, 10)];
         }
         return obj[key];
     };
-    
+
     jdp.getByKey = objectGet;
-    
+
     var objectSet = function(obj, key, value){
         if (isArray(obj) && obj._key) {
             var getKey = obj._key;
@@ -1116,11 +906,11 @@ getVal = function(valStr, strTokens) {
         }
         return d;
     };
-    
+
     var patch = jdp.patch = function(o, pname, d, path) {
-    
+
         var p, nvalue, subpath = '', target;
-        
+
         if (typeof pname != 'string') {
             path = d;
             d = pname;
@@ -1131,7 +921,7 @@ getVal = function(valStr, strTokens) {
                 pname = null;
             }
         }
-        
+
         if (path) {
             subpath += path;
         }
@@ -1139,7 +929,7 @@ getVal = function(valStr, strTokens) {
         if (pname !== null) {
             subpath += pname;
         }
-        
+
         if (typeof d == 'object') {
             if (isArray(d)) {
                 // changed value
@@ -1222,19 +1012,19 @@ getVal = function(valStr, strTokens) {
                 }
             }
         }
-        
+
         return o;
     };
 
     var unpatch = jdp.unpatch = function(o, pname, d, path){
-        
+
         if (typeof pname != 'string') {
             return patch(o, reverse(pname), d);
         }
 
         return patch(o, pname, reverse(d), path);
     };
-    
+
     if (typeof require === 'function' && typeof exports === 'object' && typeof module === 'object') {
         // CommonJS, eg: node.js
         module.exports = jdp;
@@ -1246,6 +1036,222 @@ getVal = function(valStr, strTokens) {
         jsondiffpatch = jdp;
     }
 
-// ********************************************************************************
-// now run all that tuff
+
+
+/**
+ * [bfnr_run description]
+ * @return {[type]} [description]
+ */
+function bfnr_run(){
+var path = ((File($.fileName)).path);
+
+// $.evalFile(File(path + '/submodules/tomljs/toml.js'));// https://github.com/JonAbrams/tomljs
+
+// $.evalFile(File(path +'/submodules/JsonDiffPatch/src/jsondiffpatch.js')); // https://github.
+
+/**
+ * the settings
+ * @type {Object}
+ */
+var bfnr = {
+  'version':'0.1.2',
+  'toml':null,
+  'settings':{
+  'do_text':false,
+  'do_grep':false,
+  'do_glyph':false,
+  'do_object':false,
+  'do_all_docs':true
+  }
+};
+// lets get the data
+var tomltxt = readfile('toml', path);
+if(tomltxt !==null){
+  // diff and patch the settings
+  //
+  bfnr.toml = TOML.parse(tomltxt);
+  var delta = jsondiffpatch.diff(bfnr.settings, bfnr.toml);
+  // alert(delta.toSource());
+  jsondiffpatch.patch(bfnr.settings, delta);
+  // alert(bfnr.settings.toSource());
+}
+
+// this is written for mirna to work on all of her docs ;)
+// http://forums.adobe.com/message/5228290#5228290
+var doc = null;
+if(bfnr.settings.do_all_docs === true){
+  for(var d = 0; d < app.documents.length;d++){
+    doc = app.documents[d];
+    if(doc !== null){
+    run_processor(doc, bfnr);
+    }
+  }
+
+}else{
+  doc = app.activeDocument;
+  if(doc !== null){
+    run_processor(doc, bfnr);
+  }
+}
+
+} // end of run function
+/**
+ * [run_processor description]
+ * @param  {[type]} doc  [description]
+ * @param  {[type]} bfnr [description]
+ * @return {[type]}      [description]
+ */
+function run_processor(doc, bfnr){
+if(bfnr.settings.do_text === true){
+  processor(doc, SearchModes.TEXT_SEARCH, bfnr.toml.text.files, "Text Search");
+}
+if(bfnr.settings.do_grep === true){
+  processor(doc, SearchModes.GREP_SEARCH, bfnr.toml.grep.files, "Grep Search");
+}
+if(bfnr.settings.do_glyph === true){
+  processor(doc, SearchModes.GLYPH_SEARCH, bfnr.toml.glyph.files, "Glyph Search");
+}
+if(bfnr.settings.do_object === true){
+  processor(doc, SearchModes.OBJECT_SEARCH, bfnr.toml.objects.files, "Object Search");
+}
+}
+/**
+ * [processor description]
+ * @param  {[type]} doc  [description]
+ * @param  {[type]} mode [description]
+ * @param  {[type]} list [description]
+ * @return {[type]}      [description]
+ */
+function processor(doc, mode, list, title){
+
+ var progress_win = new Window ("palette");
+
+ var progress = progress_bar(progress_win, list.length, 'processing FC Queries' + title);
+
+
+for(var i = 0; i < list.length;i++){
+
+  try{
+  app.loadFindChangeQuery (list[i], mode);
+  }catch(e){
+    alert('There was an error while trying to process the "' + list[i]+'.xml"\n'+
+      'Please make sure it exists and is at the right spot\n'+
+      e);
+    }
+  try{
+  if(mode == SearchModes.TEXT_SEARCH){
+    empty_fc_fields(mode);
+    doc.changeText();
+    }
+  }catch(e){
+    alert('There was an error while processing the changeText command\n' + e);
+  }
+    try{
+
+  if(mode == SearchModes.GREP_SEARCH){
+    empty_fc_fields(mode);
+    doc.changeGrep();
+    }
+      }catch(e){
+    alert('There was an error while processing the changeGrep command\n' + e);
+  }
+      try{
+
+  if(mode == SearchModes.OBJECT_SEARCH){
+    empty_fc_fields(mode);
+    doc.changeObject();
+    }
+      }catch(e){
+    alert('There was an error while processing the changeObject command\n' + e);
+  }
+      try{
+
+  if(mode == SearchModes.GLYPH_SEARCH){
+    empty_fc_fields(mode);
+    doc.changeGlyph();
+    }
+  }catch(e){
+    alert('There was an error while processing the changeGlyph command\n' + e);
+    }
+  progress.value = (i+1);
+  }
+
+  progress.parent.close();
+}
+/**
+ * basic file reading function
+ * @param  {String} type the type of file
+ * @return {String or null}
+ */
+function readfile(type, path){
+  var file_to_read = null;
+  file_to_read = File(path + '/' + 'batch-find-and-replace.toml');
+  if(file_to_read.exists !== true){
+    file_to_read = File.openDialog("Select a "+type+" file to import.", "*."+type,false);
+  }
+
+  var txt = null;
+  if (file_to_read !== null) {
+    file_to_read.open('r','TEXT','????');
+    txt = file_to_read.read();
+    file_to_read.close();
+  }
+  if(txt !== null){
+    return txt;
+  }else{
+    alert('Error reading file');
+    return null;
+  }
+}
+
+
+function empty_fc_fields(mode){
+
+  if(mode == SearchModes.TEXT_SEARCH){
+  app.findTextPreferences = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
+  app.changeTextPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
+
+  }
+  if(mode == SearchModes.GREP_SEARCH){
+
+  app.findGrepPreferences = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
+  app.changeGrepPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
+
+  }
+  if(mode == SearchModes.GLYPH_SEARCH){
+  app.findGlyphPreference = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
+  app.changeGlyphPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
+
+  }
+
+  if(mode == SearchModes.OBJECT_SEARCH){
+  app.findObjectPreference = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
+  app.changeObjectPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
+
+  }
+
+}
+
+
+/**
+ * Taken from ScriptUI by Peter Kahrel
+ * @usage
+ * var progress_win = new Window ("palette");
+ *
+ * var progress = progress_bar(progress_win, 100, 'my Progress');
+ *
+ *       progress.value = i++;
+ *       progress.parent.close();// important close it!!
+ *
+ * @param  {Palette} w    the palette the progress is shown on
+ * @param  {Number} stop [description]
+ * @return {Progressbar}      [description]
+ */
+function progress_bar (w, stop, labeltext) {
+var txt = w.add('statictext',undefined,labeltext);
+var pbar = w.add ("progressbar", undefined, 1, stop); pbar.preferredSize = [300,20];
+w.show ();
+return pbar;
+}
+
 bfnr_run();

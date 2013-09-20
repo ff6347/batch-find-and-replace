@@ -1,8 +1,8 @@
 # these are the basic settings
 # the MUST be there
 do_text = true
-do_grep = true
-do_glyph = true
+do_grep = false
+do_glyph = false
 do_object = false
 do_all_docs = true
 # now the file names
