@@ -296,7 +296,7 @@ getVal = function(valStr, strTokens) {
                 if (indexOnArray2 < 0) {
                     // added, try to match with a removed item and register as position move
                     var isMove = false;
-                    if (jdp.config.detectArrayMove) {                        
+                    if (jdp.config.detectArrayMove) {
                         if (removedItemsLength > 0) {
                             for (index1 = 0; index1 < removedItemsLength; index1++) {
                                 if (areTheSameByIndex(removedItems[index1], index)) {
@@ -475,7 +475,7 @@ getVal = function(valStr, strTokens) {
             var len1 = array1.length;
             var len2 = array2.length;
             var x, y;
-            
+
             // initialize empty matrix of len1+1 x len2+1
             var matrix = [len1 + 1];
             for (x = 0; x < len1 + 1; x++) {
@@ -535,10 +535,10 @@ getVal = function(valStr, strTokens) {
         }
         return value;
     };
-    
+
     var diff_match_patch_autoconfig = function(){
         var dmp;
-        
+
         if (jdp.config.diff_match_patch) {
             dmp = new jdp.config.diff_match_patch.diff_match_patch();
         }
@@ -550,7 +550,7 @@ getVal = function(valStr, strTokens) {
                 dmp = new diff_match_patch.diff_match_patch();
             }
         }
-        
+
         if (dmp) {
             jdp.config.textDiff = function(txt1, txt2){
                 return dmp.patch_toText(dmp.patch_make(txt1, txt2));
@@ -585,11 +585,11 @@ getVal = function(valStr, strTokens) {
     };
 
     var objectDiff = function(o, n){
-    
+
         var odiff, pdiff, prop, addPropDiff;
-        
+
         addPropDiff = function(name){
-            
+
             pdiff = diff(o[name], n[name]);
             if (typeof pdiff != 'undefined') {
                 if (typeof odiff == 'undefined') {
@@ -598,7 +598,7 @@ getVal = function(valStr, strTokens) {
                 odiff[name] = pdiff;
             }
         };
-        
+
         for (prop in n) {
             if (n.hasOwnProperty(prop)) {
                 addPropDiff(prop);
@@ -613,10 +613,10 @@ getVal = function(valStr, strTokens) {
         }
         return odiff;
     };
-    
+
     var diff = jdp.diff = function(o, n){
         var ntype, otype, nnull, onull, d;
-        
+
         if (o === n) {
             return;
         }
@@ -641,7 +641,7 @@ getVal = function(valStr, strTokens) {
                 }
             }
         }
-        
+
         if (nnull || onull || ntype == 'undefined' || ntype != otype ||
         ntype == 'number' ||
         otype == 'number' ||
@@ -693,16 +693,16 @@ getVal = function(valStr, strTokens) {
             }
         }
     };
-    
+
     var objectGet = function(obj, key){
         if (isArray(obj)) {
             return obj[parseInt(key, 10)];
         }
         return obj[key];
     };
-    
+
     jdp.getByKey = objectGet;
-    
+
     var objectSet = function(obj, key, value){
         if (isArray(obj) && obj._key) {
             var getKey = obj._key;
@@ -906,11 +906,11 @@ getVal = function(valStr, strTokens) {
         }
         return d;
     };
-    
+
     var patch = jdp.patch = function(o, pname, d, path) {
-    
+
         var p, nvalue, subpath = '', target;
-        
+
         if (typeof pname != 'string') {
             path = d;
             d = pname;
@@ -921,7 +921,7 @@ getVal = function(valStr, strTokens) {
                 pname = null;
             }
         }
-        
+
         if (path) {
             subpath += path;
         }
@@ -929,7 +929,7 @@ getVal = function(valStr, strTokens) {
         if (pname !== null) {
             subpath += pname;
         }
-        
+
         if (typeof d == 'object') {
             if (isArray(d)) {
                 // changed value
@@ -1012,19 +1012,19 @@ getVal = function(valStr, strTokens) {
                 }
             }
         }
-        
+
         return o;
     };
 
     var unpatch = jdp.unpatch = function(o, pname, d, path){
-        
+
         if (typeof pname != 'string') {
             return patch(o, reverse(pname), d);
         }
 
         return patch(o, pname, reverse(d), path);
     };
-    
+
     if (typeof require === 'function' && typeof exports === 'object' && typeof module === 'object') {
         // CommonJS, eg: node.js
         module.exports = jdp;
@@ -1037,66 +1037,65 @@ getVal = function(valStr, strTokens) {
     }
 
 
-
 /**
  * [bfnr_run description]
  * @return {[type]} [description]
  */
-function bfnr_run(){
-var path = ((File($.fileName)).path);
 
-$.evalFile(File(path + '/submodules/tomljs/toml.js'));// https://github.com/JonAbrams/tomljs
+function bfnr_run() {
+  var path = ((File($.fileName)).path);
 
-$.evalFile(File(path +'/submodules/JsonDiffPatch/src/jsondiffpatch.js')); // https://github.
+  // $.evalFile(File(path + '/submodules/tomljs/toml.js')); // https://github.com/JonAbrams/tomljs
 
-/**
- * the settings
- * @type {Object}
- */
-var bfnr = {
-  'version':'0.1.3',
-  'toml':null,
-  'settings':{
-  'do_text':false,
-  'do_grep':false,
-  'do_glyph':false,
-  'do_object':false,
-  'do_all_docs':true,
-  'selection_mode':true /* if true it will try to use the selction instead of document */
+  // $.evalFile(File(path + '/submodules/JsonDiffPatch/src/jsondiffpatch.js')); // https://github.
+
+  /**
+   * the settings
+   * @type {Object}
+   */
+  var bfnr = {
+    'version': '0.1.3',
+    'toml': null,
+    'settings': {
+      'do_text': false,
+      'do_grep': false,
+      'do_glyph': false,
+      'do_object': false,
+      'do_all_docs': true
+    }
+  };
+  // lets get the data
+  var tomltxt = readfile('toml', path);
+  if (tomltxt !== null) {
+    // diff and patch the settings
+    //
+    bfnr.toml = TOML.parse(tomltxt);
+    var delta = jsondiffpatch.diff(bfnr.settings, bfnr.toml);
+    // alert(delta.toSource());
+    jsondiffpatch.patch(bfnr.settings, delta);
+    // alert(bfnr.settings.toSource());
   }
-};
-// lets get the data
-var tomltxt = readfile('toml', path);
-if(tomltxt !==null){
-  // diff and patch the settings
-  //
-  bfnr.toml = TOML.parse(tomltxt);
-  var delta = jsondiffpatch.diff(bfnr.settings, bfnr.toml);
-  // alert(delta.toSource());
-  jsondiffpatch.patch(bfnr.settings, delta);
-  // alert(bfnr.settings.toSource());
-}
 
-// this is written for mirna to work on all of her docs ;)
-// http://forums.adobe.com/message/5228290#5228290
-var doc = null;
-if(bfnr.settings.do_all_docs === true){
-  for(var d = 0; d < app.documents.length;d++){
-    doc = app.documents[d];
-    if(doc !== null){
-    run_processor(doc, bfnr);
+  // this is written for mirna to work on all of her docs ;)
+  // http://forums.adobe.com/message/5228290#5228290
+  var doc = null;
+  if (bfnr.settings.do_all_docs === true) {
+    for (var d = 0; d < app.documents.length; d++) {
+      doc = app.documents[d];
+      if (doc !== null) {
+        run_processor(doc, bfnr);
+      }
+    }
+
+  } else {
+    doc = app.activeDocument;
+    if (doc !== null) {
+      // if(doc.selection.length === 0){
+      //   bfnr.settings.selection_mode = false;
+      // }
+      run_processor(doc, bfnr);
     }
   }
-
-}else{
-  doc = app.activeDocument;
-  if(doc !== null){
-    if((bfnr.settings.selection_mode === true )&&(doc.selection.length === 0)){
-      bfnr.settings.selection_mode = false;
-    }
-    run_processor(doc, bfnr);
-  }
-}
 
 } // end of run function
 /**
@@ -1105,19 +1104,24 @@ if(bfnr.settings.do_all_docs === true){
  * @param  {[type]} bfnr [description]
  * @return {[type]}      [description]
  */
-function run_processor(doc, bfnr){
-if(bfnr.settings.do_text === true){
-  processor(doc, SearchModes.TEXT_SEARCH, bfnr.toml.text.files, "Text Search", bfnr);
-}
-if(bfnr.settings.do_grep === true){
-  processor(doc, SearchModes.GREP_SEARCH, bfnr.toml.grep.files, "Grep Search", bfnr);
-}
-if(bfnr.settings.do_glyph === true){
-  processor(doc, SearchModes.GLYPH_SEARCH, bfnr.toml.glyph.files, "Glyph Search", bfnr);
-}
-if(bfnr.settings.do_object === true){
-  processor(doc, SearchModes.OBJECT_SEARCH, bfnr.toml.objects.files, "Object Search", bfnr);
-}
+
+function run_processor(doc, bfnr) {
+  if (bfnr.settings.do_text === true) {
+    processor(doc, SearchModes.TEXT_SEARCH, bfnr.toml.text.files, "Text Search",
+      bfnr);
+  }
+  if (bfnr.settings.do_grep === true) {
+    processor(doc, SearchModes.GREP_SEARCH, bfnr.toml.grep.files, "Grep Search",
+      bfnr);
+  }
+  if (bfnr.settings.do_glyph === true) {
+    processor(doc, SearchModes.GLYPH_SEARCH, bfnr.toml.glyph.files,
+      "Glyph Search", bfnr);
+  }
+  if (bfnr.settings.do_object === true) {
+    processor(doc, SearchModes.OBJECT_SEARCH, bfnr.toml.objects.files,
+      "Object Search", bfnr);
+  }
 }
 /**
  * [processor descriptio, bfnrn]
@@ -1126,104 +1130,97 @@ if(bfnr.settings.do_object === true){
  * @param  {[type]} list [description]
  * @return {[type]}      [description]
  */
-function processor(doc, mode, list, title, bfnr){
 
- var progress_win = new Window ("palette");
+function processor(doc, mode, list, title, bfnr) {
 
- var progress = progress_bar(progress_win, list.length, 'processing FC Queries' + title);
+  var progress_win = new Window("palette");
+
+  var progress = progress_bar(progress_win, list.length,
+    'processing FC Queries' + title);
 
 
-for(var i = 0; i < list.length;i++){
+  for (var i = 0; i < list.length; i++) {
 
     empty_fc_fields(mode);
-  try{
-  app.loadFindChangeQuery (list[i], mode);
-  }catch(e){
-    alert('There was an error while trying to process the "' + list[i]+'.xml"\n'+
-      'Please make sure it exists and is at the right spot\n'+
-      e);
+    try {
+      app.loadFindChangeQuery(list[i], mode);
+    } catch (e) {
+      alert('There was an error while trying to process the "' + list[i] +
+        '.xml"\n' +
+        'Please make sure it exists and is at the right spot\n' +
+        e);
     }
-  // try{
-  if(mode == SearchModes.TEXT_SEARCH){
-
-    if(bfnr.settings.selection_mode === true){
-      if(doc.selection.length > 0){
-        for(var j = 0; j < doc.selection.length;j++){
-          var sel_item_text = doc.selection[j];
-          sel_item_text.changeText();
-          // empty_fc_fields(mode);
+    try {
+      if (mode == SearchModes.TEXT_SEARCH) {
+        if (doc.selection.length > 0) {
+          for (var j = 0; j < doc.selection.length; j++) {
+            var sel_item_text = doc.selection[j];
+            sel_item_text.changeText();
+          }
+        } else {
+          doc.changeText();
         }
-      } // end j loop
-    }else{
-      doc.changeText();
       }
-
-
+    } catch (e) {
+      alert('There was an error while processing the changeText command\n' + e);
     }
+    try {
+
+      if (mode == SearchModes.GREP_SEARCH) {
 
 
-  // }catch(e){
-  //   alert('There was an error while processing the changeText command\n' + e);
-  // }
-    try{
+        if (doc.selection.length > 0) {
+          for (var k = 0; k < doc.selection.length; k++) {
+            var sel_item_grep = doc.selection[k];
+            sel_item_grep.changeGrep();
 
-  if(mode == SearchModes.GREP_SEARCH){
-    // empty_fc_fields(mode);
-    if(bfnr.settings.selection_mode === true){
-      if(doc.selection.length > 0){
-        for(var k = 0; k < doc.selection.length;k++){
-          var sel_item_grep = doc.selection[k];
-          sel_item_grep.changeGrep();
-          // empty_fc_fields(mode);
+          }
+        } else {
+          doc.changeGrep();
         }
-      } // end k loop
-    }else{
-      doc.changeGrep();
       }
+    } catch (e) {
+      alert('There was an error while processing the changeGrep command\n' + e);
     }
-      }catch(e){
-    alert('There was an error while processing the changeGrep command\n' + e);
-  }
-      try{
+    try {
 
-  if(mode == SearchModes.OBJECT_SEARCH){
-    // empty_fc_fields(mode);
-    if(bfnr.settings.selection_mode === true){
-      if(doc.selection.length > 0){
-        for(var l = 0; l < doc.selection.length;l++){
-          var sel_item_obj = doc.selection[l];
-          // empty_fc_fields(mode);
-          sel_item_obj.changeObject();
+      if (mode == SearchModes.OBJECT_SEARCH) {
+
+
+        if (doc.selection.length > 0) {
+          for (var l = 0; l < doc.selection.length; l++) {
+            var sel_item_obj = doc.selection[l];
+
+            sel_item_obj.changeObject();
+          }
+        } else {
+          doc.changeObject();
         }
-      } // end l loop
-    }else{
-      doc.changeObject();
+
       }
-
+    } catch (e) {
+      alert('There was an error while processing the changeObject command\n' +
+        e);
     }
-      }catch(e){
-    alert('There was an error while processing the changeObject command\n' + e);
-  }
-      try{
+    try {
 
-  if(mode == SearchModes.GLYPH_SEARCH){
-        // empty_fc_fields(mode);
-    if(bfnr.settings.selection_mode === true){
-      if(doc.selection.length > 0){
-        for(var m = 0; m < doc.selection.length;m++){
-          var sel_item_glyph = doc.selection[m];
-          // empty_fc_fields(mode);
-          sel_item_glyph.changeGlyph();
+      if (mode == SearchModes.GLYPH_SEARCH) {
+
+
+        if (doc.selection.length > 0) {
+          for (var m = 0; m < doc.selection.length; m++) {
+            var sel_item_glyph = doc.selection[m];
+
+            sel_item_glyph.changeGlyph();
+          }
+        } else {
+          doc.changeGlyph();
         }
-      } // end m loop
-    }else{
-      doc.changeGlyph();
       }
+    } catch (e) {
+      alert('There was an error while processing the changeGlyph command\n' + e);
     }
-  }catch(e){
-    alert('There was an error while processing the changeGlyph command\n' + e);
-    }
-  progress.value = (i+1);
+    progress.value = (i + 1);
   }
 
   progress.parent.close();
@@ -1233,50 +1230,52 @@ for(var i = 0; i < list.length;i++){
  * @param  {String} type the type of file
  * @return {String or null}
  */
-function readfile(type, path){
+
+function readfile(type, path) {
   var file_to_read = null;
   file_to_read = File(path + '/' + 'batch-find-and-replace.toml');
-  if(file_to_read.exists !== true){
-    file_to_read = File.openDialog("Select a "+type+" file to import.", "*."+type,false);
+  if (file_to_read.exists !== true) {
+    file_to_read = File.openDialog("Select a " + type + " file to import.",
+      "*." + type, false);
   }
 
   var txt = null;
   if (file_to_read !== null) {
-    file_to_read.open('r','TEXT','????');
+    file_to_read.open('r', 'TEXT', '????');
     txt = file_to_read.read();
     file_to_read.close();
   }
-  if(txt !== null){
+  if (txt !== null) {
     return txt;
-  }else{
+  } else {
     alert('Error reading file');
     return null;
   }
 }
 
 
-function empty_fc_fields(mode){
+function empty_fc_fields(mode) {
 
-  if(mode == SearchModes.TEXT_SEARCH){
-  app.findTextPreferences = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
-  app.changeTextPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
-
-  }
-  if(mode == SearchModes.GREP_SEARCH){
-
-  app.findGrepPreferences = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
-  app.changeGrepPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
+  if (mode == SearchModes.TEXT_SEARCH) {
+    app.findTextPreferences = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
+    app.changeTextPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
 
   }
-  if(mode == SearchModes.GLYPH_SEARCH){
-  app.findGlyphPreference = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
-  app.changeGlyphPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
+  if (mode == SearchModes.GREP_SEARCH) {
+
+    app.findGrepPreferences = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
+    app.changeGrepPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
+
+  }
+  if (mode == SearchModes.GLYPH_SEARCH) {
+    app.findGlyphPreference = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
+    app.changeGlyphPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
 
   }
 
-  if(mode == SearchModes.OBJECT_SEARCH){
-  app.findObjectPreference = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
-  app.changeObjectPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
+  if (mode == SearchModes.OBJECT_SEARCH) {
+    app.findObjectPreference = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
+    app.changeObjectPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
 
   }
 
@@ -1297,11 +1296,13 @@ function empty_fc_fields(mode){
  * @param  {Number} stop [description]
  * @return {Progressbar}      [description]
  */
-function progress_bar (w, stop, labeltext) {
-var txt = w.add('statictext',undefined,labeltext);
-var pbar = w.add ("progressbar", undefined, 1, stop); pbar.preferredSize = [300,20];
-w.show ();
-return pbar;
+
+function progress_bar(w, stop, labeltext) {
+  var txt = w.add('statictext', undefined, labeltext);
+  var pbar = w.add("progressbar", undefined, 1, stop);
+  pbar.preferredSize = [300, 20];
+  w.show();
+  return pbar;
 }
 
 bfnr_run();
