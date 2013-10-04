@@ -1,0 +1,1600 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"exp",
+				"exporter_data"
+			],
+			[
+				"ex",
+				"exporter"
+			],
+			[
+				"file",
+				"filelist"
+			],
+			[
+				"cre",
+				"created"
+			],
+			[
+				"fil",
+				"filelist"
+			],
+			[
+				"alert",
+				"alert"
+			],
+			[
+				"out",
+				"outFile"
+			],
+			[
+				"open",
+				"openDialog"
+			],
+			[
+				"act",
+				"activeDocument"
+			],
+			[
+				"lock",
+				"locklayers"
+			],
+			[
+				"lo",
+				"locklayers"
+			],
+			[
+				"ac",
+				"activeDocument"
+			],
+			[
+				"g",
+				"geometricBounds"
+			],
+			[
+				"selec",
+				"selection"
+			],
+			[
+				"sel",
+				"selection"
+			],
+			[
+				"ho",
+				"horizontalScale"
+			],
+			[
+				"to",
+				"topFolder"
+			],
+			[
+				"ma",
+				"margPrefs"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"do",
+				"doc"
+			],
+			[
+				"col",
+				"color_add"
+			],
+			[
+				"wr",
+				"write_file"
+			],
+			[
+				"my",
+				"myDoc"
+			],
+			[
+				"match",
+				"matches"
+			],
+			[
+				"po",
+				"potential72dpi"
+			],
+			[
+				"entr",
+				"entryShadow"
+			],
+			[
+				"en",
+				"entryShadow"
+			],
+			[
+				"im",
+				"imgborder"
+			],
+			[
+				"back",
+				"background:url"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"call",
+				"callunaSans"
+			],
+			[
+				"ligh",
+				"lightgrey"
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"c",
+				"counter"
+			],
+			[
+				"the",
+				"theNumber"
+			],
+			[
+				"la",
+				"label"
+			],
+			[
+				"rect",
+				"rectangle"
+			],
+			[
+				"lab",
+				"label"
+			],
+			[
+				"mpo",
+				"mpo_data"
+			],
+			[
+				"du",
+				"dummy"
+			],
+			[
+				"mp",
+				"mpo_data"
+			],
+			[
+				"reu",
+				"return"
+			],
+			[
+				"dum",
+				"dummies_data"
+			],
+			[
+				"get",
+				"get_dummies"
+			],
+			[
+				"all",
+				"alldummies"
+			],
+			[
+				"str",
+				"strcmp"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"xml",
+				"xmlexist"
+			],
+			[
+				"on",
+				"onClick	onClick function(){};"
+			],
+			[
+				"xmlEx",
+				"xmlExistChkBx"
+			],
+			[
+				"mo",
+				"mode"
+			],
+			[
+				"can",
+				"canCancel:true"
+			],
+			[
+				"mode",
+				"modeDropdown"
+			],
+			[
+				"mod",
+				"mode_dropdownid"
+			],
+			[
+				"xmle",
+				"xmlexist_id"
+			],
+			[
+				"dia",
+				"dialog"
+			],
+			[
+				"sho",
+				"show"
+			],
+			[
+				"new",
+				"newsimpleDialog"
+			],
+			[
+				"sim",
+				"simpleDialog"
+			],
+			[
+				"bui",
+				"build_simple_dialog"
+			],
+			[
+				"xmlre",
+				"xmlremove_id"
+			],
+			[
+				"xml_",
+				"xml_exist_id"
+			],
+			[
+				"ad",
+				"adiag_column1"
+			],
+			[
+				"doc",
+				"docpath"
+			],
+			[
+				"check",
+				"checkOS"
+			],
+			[
+				"ale",
+				"alert	alert with text"
+			],
+			[
+				"Re",
+				"RegExp"
+			],
+			[
+				"aler",
+				"alert"
+			],
+			[
+				"chec",
+				"check_guid"
+			],
+			[
+				"Sy",
+				"SyntaxError"
+			],
+			[
+				"unde",
+				"undefined"
+			],
+			[
+				"item",
+				"item_info"
+			],
+			[
+				"js",
+				"jsondumb"
+			],
+			[
+				"it",
+				"item_info"
+			],
+			[
+				"process",
+				"processXMLv2"
+			],
+			[
+				"cmt",
+				"cmt	comment line with option"
+			],
+			[
+				"scri",
+				"script_file_folder"
+			],
+			[
+				"script",
+				"script_file"
+			],
+			[
+				"par",
+				"parent"
+			],
+			[
+				"th",
+				"theimage"
+			],
+			[
+				"image",
+				"imagedata"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"margin",
+				"margin:0"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"nav",
+				"navbar"
+			],
+			[
+				"assets",
+				"assets/images/header/angebot"
+			],
+			[
+				"backr",
+				"background"
+			],
+			[
+				"class",
+				"classstring"
+			],
+			[
+				"op",
+				"options"
+			],
+			[
+				"wid",
+				"min-width"
+			],
+			[
+				"In",
+				"InDesign/Version"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"read",
+				"readOnly"
+			],
+			[
+				"scr",
+				"script_version"
+			],
+			[
+				"err",
+				"errNoQuery"
+			],
+			[
+				"row",
+				"row1"
+			],
+			[
+				"add",
+				"add"
+			],
+			[
+				"dial",
+				"dialogColumns"
+			],
+			[
+				"page",
+				"pageSelector"
+			],
+			[
+				"co",
+				"column1"
+			],
+			[
+				"al",
+				"alist"
+			],
+			[
+				"myL",
+				"myLogFile"
+			],
+			[
+				"strin",
+				"string_page_ids"
+			],
+			[
+				"wp_en",
+				"wp_enqueue_style"
+			],
+			[
+				"pre",
+				"pretty"
+			],
+			[
+				"sty",
+				"styles"
+			],
+			[
+				"style",
+				"styles"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"if",
+				"ifelse	if … else …"
+			],
+			[
+				"fun",
+				"function_name"
+			],
+			[
+				"term",
+				"termfile"
+			],
+			[
+				"cm",
+				"cmd"
+			],
+			[
+				"pro",
+				"project"
+			],
+			[
+				"fram",
+				"frameDuration"
+			],
+			[
+				"Pad",
+				"PadDigits"
+			],
+			[
+				"ren",
+				"rename"
+			],
+			[
+				"tem",
+				"templates"
+			],
+			[
+				"path",
+				"patch_data"
+			],
+			[
+				"patc",
+				"patch_data"
+			],
+			[
+				"main",
+				"main_comp"
+			],
+			[
+				"pat",
+				"patch_data"
+			],
+			[
+				"run_",
+				"run_render_frame_at_marker"
+			],
+			[
+				"rea",
+				"read_db"
+			],
+			[
+				"win",
+				"window"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 207.0,
+		"selected_items":
+		[
+			[
+				"csv",
+				"Set Syntax: CSV"
+			],
+			[
+				"upp",
+				"Convert Case: Upper Case"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"MIT",
+				"Snippet: MIT JSX License Code"
+			],
+			[
+				"be",
+				"Javascript Beautify"
+			],
+			[
+				"ano",
+				"Snippet: enclose in anonymous function"
+			],
+			[
+				"ex",
+				"Set Syntax: ExtendScript"
+			],
+			[
+				"ter",
+				"Open in terminal"
+			],
+			[
+				"gist",
+				"Gist: Create Public Gist"
+			],
+			[
+				"she",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"j",
+				"Javascript Beautify"
+			],
+			[
+				"bea",
+				"Javascript Beautify"
+			],
+			[
+				"an",
+				"Snippet: enclose in anonymous function"
+			],
+			[
+				"mit",
+				"Snippet: MIT JSX License Code"
+			],
+			[
+				"gis",
+				"Gist: Create Public Gist"
+			],
+			[
+				"mar",
+				"Marked"
+			],
+			[
+				"table",
+				"Snippet: <table>"
+			],
+			[
+				"mul",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"b",
+				"Javascript Beautify"
+			],
+			[
+				"exte",
+				"Set Syntax: ExtendScript"
+			],
+			[
+				"enc",
+				"Snippet: enclose in anonymous function"
+			],
+			[
+				"mark",
+				"Marked"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"colo",
+				"Color Picker: Insert Color"
+			],
+			[
+				"co",
+				"Color Picker: Insert Color"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"incre",
+				"Emmet: Increment Number by 1"
+			],
+			[
+				"CSV",
+				"Set Syntax: CSV"
+			],
+			[
+				"gi",
+				"Gist: Create Public Gist"
+			],
+			[
+				"js",
+				"Javascript Beautify"
+			],
+			[
+				"jsb",
+				"Javascript Beautify"
+			],
+			[
+				"lin",
+				"Line Ending: Unix"
+			],
+			[
+				"enabl",
+				"Package Control: Enable Package"
+			],
+			[
+				"swa",
+				"BracketHighlighter: Swap Quotes"
+			],
+			[
+				"case",
+				"Convert Case: Upper Case"
+			],
+			[
+				"make",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"encl",
+				"Snippet: enclose in anonymous function"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"pack",
+				"Package Control: Enable Package"
+			],
+			[
+				"json",
+				"Indent JSON"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ma",
+				"Marked"
+			],
+			[
+				"pick",
+				"Color Picker: Insert Color"
+			],
+			[
+				"enti",
+				"StringEncode: HTML Entitize"
+			],
+			[
+				"swap",
+				"BracketHighlighter: Swap Quotes"
+			],
+			[
+				"entie",
+				"StringEncode: HTML Entitize"
+			],
+			[
+				"term",
+				"Open in terminal"
+			],
+			[
+				"previ",
+				"Markdown Preview: Copy to Clipboard"
+			],
+			[
+				"previe",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"rea",
+				"ReadmePlease"
+			],
+			[
+				"toml",
+				"Set Syntax: TOML"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"termin",
+				"Open in terminal"
+			],
+			[
+				"goll",
+				"Snippet: enclose for gollum / pygments syntax highlite js"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"dele",
+				"z:AAAPackageDev: Delete Package"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"d",
+				"Package Control: Disable Package"
+			],
+			[
+				"disp",
+				"Package Control: Disable Package"
+			],
+			[
+				"dos",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"di",
+				"Package Control: Disable Package"
+			],
+			[
+				"disl",
+				"Package Control: Disable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"anon",
+				"Snippet: enclose in anonymous function"
+			],
+			[
+				"prett",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"rett",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"html",
+				"Set Syntax: HTML5"
+			],
+			[
+				"enclose",
+				"Snippet: JS comment enclose"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
+			[
+				"dif",
+				"Sublimerge: View Diff"
+			],
+			[
+				"js com",
+				"Snippet: JS comment enclose"
+			],
+			[
+				"js co",
+				"Snippet: JS comment enclose"
+			],
+			[
+				"comment",
+				"Snippet: JS comment enclose"
+			],
+			[
+				"JS c",
+				"Snippet: JS comment enclose"
+			],
+			[
+				"comment ",
+				"Snippet: JS comment enclose"
+			],
+			[
+				"JS",
+				"Snippet: JS comment enclose"
+			],
+			[
+				"lineen",
+				"Line Ending: Unix"
+			],
+			[
+				"linee",
+				"Line Ending: Unix"
+			],
+			[
+				"line",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"jek",
+				"Jekyll: New Post"
+			],
+			[
+				"commen",
+				"Snippet: this is a layout for comments in scirpts"
+			],
+			[
+				"ext",
+				"Set Syntax: ExtendScript"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"spac",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"setting",
+				"Preferences: Settings - User"
+			],
+			[
+				"flatl",
+				"FormatSQL: Format SQL statement"
+			],
+			[
+				"pref",
+				"Preferences: Settings - User"
+			],
+			[
+				"lice",
+				"Licence Snippet: MIT"
+			],
+			[
+				"spa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"caps",
+				"Snippet: capsulated function"
+			],
+			[
+				"maker",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"tick",
+				"Snippet: ftb enclose in ticks md"
+			],
+			[
+				"obje",
+				"Set Syntax: Objective-C"
+			],
+			[
+				"jeky",
+				"Snippet: ftb jekyll enclose in highlite js inline"
+			],
+			[
+				"dash",
+				"DashDoc: invoke Dash with selected word (syntax-sensitive)"
+			],
+			[
+				"prefe",
+				"Preferences: Settings - User"
+			],
+			[
+				"das",
+				"DashDoc: invoke Dash with selected word (syntax-sensitive)"
+			],
+			[
+				"linter",
+				"Preferences: SublimeLinter Settings – Default"
+			],
+			[
+				"fun",
+				"Snippet: A simple AE function"
+			],
+			[
+				"exten",
+				"Set Syntax: Adobe ExtendScript"
+			],
+			[
+				"mak",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"linte",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"vari",
+				"Snippet: Snippet Maker snippet encloses selection into snippet variable"
+			],
+			[
+				"var",
+				"Snippet: enclose-in-snippet-variable"
+			],
+			[
+				"variabl",
+				"Snippet: enclose-in-snippet-variable"
+			],
+			[
+				"snippet",
+				"Snippet: enclose-in-snippet-variable"
+			],
+			[
+				"Make",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"snipp",
+				"Set Syntax: Sublime Text Snippet (Raw)"
+			],
+			[
+				"prop",
+				"z:AAAPackageDev: JSON to Property List"
+			],
+			[
+				"pro",
+				"z:AAAPackageDev: JSON to Property List"
+			],
+			[
+				"toggl",
+				"Toggle Comment"
+			],
+			[
+				"proper",
+				"z:AAAPackageDev: JSON to Property List"
+			]
+		],
+		"width": 647.0
+	},
+	"console":
+	{
+		"height": 400.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/batch-find-and-replace/src/bfnr_head.jsx",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/Guides/screencasts-grafik.html",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/MPO-Importer.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/PDF-Export.jsx",
+		"/Users/fabiantheblind/Library/Application Support/Shortcuts/shortcuts.txt",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/_deprecated/Build Link Button.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/select_all_textframes_on_page.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/_dev/PDF-Export.jsx",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/ddq_s206.csv",
+		"/Users/fabiantheblind/Desktop/ddq_s206.csv",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/tint-2-black.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/batch-find-and-replace.jsx",
+		"/Users/fabiantheblind/bin/add_folder_name_as_id3_tag_title.sh",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/Build Link Button.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/close-till-ip.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/_dev/remove-last-paragraph.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/Samples/JavaScript/AlignToPage.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/Swap Position.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/remove-last-paragraph.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/copy-path-to-clipboard.jsx",
+		"/Users/fabiantheblind/Documents/_projects/AfterEffects-Scripting/Locations/Locations-master/Locations.jsx",
+		"/Users/fabiantheblind/Google Drive fabian.moron.zirfas/FHP/GestaltungsgrundlagenEinfuehrung/README.md",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/copy-name-to-clipboard.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/fit_to_margin.jsx",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/pa/JustPA_S221_VocalEffekte_komplett_09271728.xml",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/join-textframes.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/remove-nonprinting-objects.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/Quelle2.jsx",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/pa/tree.txt",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/pa/pg221/jm214_s221-125321 Voice Li.icml",
+		"/Users/fabiantheblind/Desktop/JustPA_S220_SignalampEffektprozessoren_komplett_09261053.xml",
+		"/Users/fabiantheblind/Desktop/JustDrums_S138_PercussionMEINLCajons_komplett_09261056.json",
+		"/Users/fabiantheblind/Documents/_projects/just-music/herstellerlogos/app.js",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/relink-missing-files.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/Open-Active-Document-Folder.jsx",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/allen&heath.csv",
+		"/Users/fabiantheblind/Desktop/gridder_v1.56 (1)/Gridder.jsx",
+		"/Users/fabiantheblind/Desktop/gridder_debug/gridder1.5.6.debug.md",
+		"/Users/fabiantheblind/Documents/Scripting and Reference/_AE unified Scripts Panel Folder/gridder_v1.56 2/Gridder.jsx",
+		"/Users/fabiantheblind/Documents/Scripting and Reference/_AE unified Scripts Panel Folder/gridder_v1.56/Gridder.1.5.6.jsx",
+		"/Users/fabiantheblind/Documents/Scripting and Reference/_AE unified Scripts Panel Folder/gridder_v1.56/gridder-aftereffects/Gridder.jsx",
+		"/Users/fabiantheblind/Documents/Scripting and Reference/_AE unified Scripts Panel Folder/gridder_v1.56.zip",
+		"/Users/fabiantheblind/Desktop/gridder1.5.6.debug.md",
+		"/Users/fabiantheblind/Desktop/gh-issues-import.py",
+		"/Users/fabiantheblind/Desktop/setenv GITHUB_PASSWORD",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/zed_serie_tabelle_215.csv",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/pa/JustPA_S215_MischpulteAnalog_komplett_09201452.xml",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/s_216_yamaha_mischer_JMKat2013-2.csv",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/mischpulte 214- Mackie.csv",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-test/potential72dpi-Detection-log.txt",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-test/000-001-jm2014-Screencast.indd-potential72dpi-Detection-log.txt",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/potential72dpi-detector.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/_dev/potential72dpi.txt",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/Potentielle_72dpi_Artikel/mrclipping_potenitial72dpi.xml",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/Potentielle_72dpi_Artikel/mrclipping_potenitial72dpi_2.xml",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/Potentielle_72dpi_Artikel/mrclipping_potenitial72dpi_2.txt",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/s_216_yamaha_mischer_JMKat2013.csv",
+		"/Users/fabiantheblind/Documents/_projects/gut-ankelohe/wordpress/wp-content/themes/ankelohe/style.less",
+		"/Users/fabiantheblind/Desktop/ankeloheinfos/ankelohe-uberspace-info.txt",
+		"/Users/fabiantheblind/Documents/_projects/gut-ankelohe/wordpress/wp-content/themes/ankelohe/header-images.php",
+		"/Users/fabiantheblind/Documents/_projects/gut-ankelohe/wordpress/wp-content/themes/ankelohe/assets/less/bg.less",
+		"/Users/fabiantheblind/Documents/_projects/gut-ankelohe/wordpress/wp-content/themes/ankelohe/footer.php",
+		"/Users/fabiantheblind/Desktop/wordpress/wp-config.php",
+		"/Users/fabiantheblind/.ssh/known_hosts",
+		"/Users/fabiantheblind/.ssh/config",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/s_207_SRM_DDQ.csv",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/Bose Seite 208.csv",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/s_206_JM2014_PRX_DDQ.csv",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/_dev/fix_all_tabs.jsx",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/s_205_JM2014_ZXA.csv",
+		"/Users/fabiantheblind/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/S222_kleineArtikelTabelle.csv",
+		"/Users/fabiantheblind/Library/Application Support/Sublime Text 2/Packages/User/Increment/increment.py",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/LD-Systems DJ-Serie.csv",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/s203_opera-tabelle_JM2014.csv",
+		"/Users/fabiantheblind/Desktop/JustStudio_S310_Controller_komplett_09131513.xml",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/clear-price-layer.jsx",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/pa/JustPA_S212_Powermischer_komplett_09131320.xml",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/s_204_JM2014_HDSerie.csv",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/The-Numbers.jsx",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/endstufen_s211_jm_2013.csv",
+		"/Users/fabiantheblind/Library/Application Support/Sublime Text 2/Packages/CSV/README.md",
+		"/Users/fabiantheblind/Library/Application Support/Sublime Text 2/Packages/CSV/README.",
+		"/Users/fabiantheblind/Library/Application Support/Sublime Text 2/Packages/CSV/.gitignore",
+		"/Users/fabiantheblind/Library/Application Support/Sublime Text 2/Packages/CSV/.hgignore",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/pa/JustPA_S203_AktivePALautsprecher_komplett_09131044.xml",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/s203_opera-tabelle_JM2013.csv",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/workfiles/s_204_JM2013_HDSerie.csv",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-pa-dj/pa/JustPA_S202_AktivePALautsprecher_komplett_09121712.xml",
+		"/Users/fabiantheblind/Desktop/stackoverflow/pdf-to-ai.jsx",
+		"/Users/fabiantheblind/Library/Application Support/Sublime Text 2/Packages/User/Gist.sublime-settings",
+		"/Volumes/data/_downloads/Workflows-master/Open in Sublime/proj.py",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/Replace-Dummies.jsx",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-test/JustDJ_S248_DigitaleVinylsysteme_komplett_09071233.xml",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-test/JustDJ_S248NOIMAGE.xml",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/Guides/screencast-grafiker.md",
+		"/Users/fabiantheblind/Library/Application Support/Sublime Text 2/Packages/js-beautify-sublime/Default (OSX).sublime-keymap",
+		"/Users/fabiantheblind/Documents/_projects/AfterEffects-Scripting/Monoline Text/hershey-monoline-text-dev/Monoline Text.jsx",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace-test/JustDJ_S247_MISSINGIMG.xml",
+		"/Users/fabiantheblind/Library/Application Support/Sublime Text 2/Packages/User/JavascriptBeautify.sublime-settings",
+		"/Users/fabiantheblind/Library/Application Support/Sublime Text 2/Packages/js-beautify-sublime/JavascriptBeautify.sublime-settings",
+		"/Users/fabiantheblind/Library/Application Support/Sublime Text 2/Packages/js-beautify-sublime/Context.sublime-menu",
+		"/Users/fabiantheblind/Library/Application Support/Sublime Text 2/Packages/js-beautify-sublime/jsbeautify.py",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace/justpa_s210_lspaketeampportable_komplett_08230930.xml",
+		"/Users/fabiantheblind/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/batch-find-and-replace.toml",
+		"/Users/fabiantheblind/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace/justdj_s244_4deckdjcontroller_teil_08221933.xml",
+		"/Users/fabiantheblind/Library/Application Support/Sublime Text 2/Packages/User/ftb-sublime-package/comment line.sublime-snippet",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace/justguitars_s20_bundlesdeals_komplett_08222245.xml",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace/log.txt",
+		"/Users/fabiantheblind/Library/Application Support/Sublime Text 2/Packages/User/comment-line.sublime-snippet",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/mpo-id-tools/meta/Info.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/mpo-id-tools/meta/processXML_v02.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/mpo-id-tools/meta/setupStyles.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/mpo-id-tools/MPO-Importer.jsx",
+		"/Applications/Adobe InDesign CS6/Scripts/Scripts Panel/mpo-id-tools/meta/glue code.jsx",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace/justpa_s206_aktivepalautsprecher_komplett_08212237.json",
+		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace/justpa_s206_aktivepalautsprecher_komplett_08212208.xml",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/meta/processXML_v02.jsx",
+		"/Users/fabiantheblind/Desktop/ankelohe-infos.txt",
+		"/Applications/Adobe InDesign CC/Scripts/XML Rules/glue code.jsx",
+		"/Applications/Adobe InDesign CS5/Scripts/Scripts Panel/vFFF/latest/process/glue code.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/meta/glue code.jsx",
+		"/Users/fabiantheblind/Documents/_projects/gut-ankelohe/wordpress/wp-content/themes/ankelohe/page-ankelohe.php",
+		"/Users/fabiantheblind/Documents/_projects/gut-ankelohe/wordpress/wp-content/themes/ankelohe/page.php",
+		"/Users/fabiantheblind/Documents/_projects/gut-ankelohe/wordpress/wp-content/themes/ankelohe/header.php",
+		"/Users/fabiantheblind/Documents/_projects/gut-ankelohe/wordpress/wp-content/themes/ankelohe/assets/less/gallery-overwrite.less"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools",
+			"<open files>,/Users/fabiantheblind/Documents/_projects/gut-ankelohe/wordpress/wp-content/themes/ankelohe",
+			"<open files>",
+			"<open folders>",
+			"/Users/fabiantheblind/Documents/_projects/mettle/Adobe SDKs/Adobe After Effects CS6 Mac SDK/Examples/mettle/IOtwo",
+			"/Users/fabiantheblind/Documents/_projects/NAOK/wp/wp-content/themes/motrton-two",
+			"/Users/fabiantheblind/Documents/_projects/NAOK/wp/wp-content/themes/motrton-three",
+			"/Users/fabiantheblind/Documents/_projects/NAOK",
+			"/Users/fabiantheblind/Downloads/opencv-master",
+			"/Applications/Adobe InDesign CS6/Scripts/Scripts Panel/auto-typo-adbe-id",
+			"/Users/fabiantheblind/Documents/_projects/FHPProjektwochen/auto-typo-adbe-id.wiki",
+			"/Applications/Adobe InDesign CS6/Scripts/Scripts Panel/auto-typo-adbe-id/fabiantheblind",
+			"/Users/fabiantheblind/Documents/_projects/FHPProjektwochen/auto-typo-adbe-id.gh-pages,-*.html",
+			"/Users/fabiantheblind/Documents/_projects/FHPProjektwochen/auto-typo-adbe-id.gh-pages",
+			"/Users/fabiantheblind/Documents/_projects/FHPProjektwochen/auto-typo-adbe-id.gh-pages/assets/less/bootstrap",
+			"/Applications/Adobe InDesign CS5/Scripts/Scripts Panel/__TMNScripts/incomOrg2Layout/latest"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			",",
+			"// ",
+			"//",
+			"},",
+			",",
+			"\n\n",
+			"\n",
+			"          ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"alert(msg.file_open(e))",
+			"outFile",
+			"script_file_folder",
+			"parent",
+			"scanSubFolders",
+			"activePage",
+			"list[i]",
+			",–",
+			"prcs_placeAllPrices",
+			"prcs_findItemsNumber",
+			"prcs_placeAllPrices",
+			"prcs_findItemsNumber",
+			"prcs_placeAllPrices",
+			"myUI",
+			"link_buttonUI",
+			"myUI",
+			"obj",
+			"Obj",
+			"obj",
+			"Obj",
+			"obj",
+			"Obj",
+			"obj",
+			"Obj",
+			"obj",
+			"Obj",
+			"obj",
+			"Obj",
+			"obj",
+			"Obj",
+			"obj",
+			"Obj",
+			"obj",
+			"Obj",
+			"obj",
+			"Obj",
+			"obj",
+			"Obj",
+			"obj",
+			"Obj",
+			"obj",
+			"Obj",
+			"obj",
+			"Obj",
+			"obj",
+			"Obj",
+			"obj",
+			"Obj",
+			"obj",
+			"mode",
+			"Mode",
+			"mode",
+			"Mode",
+			"mode",
+			"\n",
+			"myImgFrame",
+			"link.name",
+			"sel[i]",
+			";\n",
+			"\\",
+			"  \n",
+			"?",
+			"== false",
+			".",
+			"== false",
+			"[i]",
+			"var ",
+			"var",
+			"var ",
+			"[i]",
+			"parseInt(",
+			"}",
+			"(k.button == 0)",
+			".",
+			"new Array()",
+			" var",
+			"=== ",
+			"..",
+			".checkbox",
+			".slider",
+			".checkbox",
+			".slider",
+			"?",
+			"(\\d{1,5})(\\n)",
+			"137845",
+			"",
+			"(\\d{1,5})(\\n)",
+			"(\\d{1,5}\\n)",
+			"myColorAdd",
+			"docpath",
+			"filePath",
+			"docpath",
+			"\\n",
+			"(^.*?)\\n",
+			".jpg",
+			"^\\n",
+			"\\ ",
+			"<P>|</P>",
+			"\\n{2,100}",
+			"<(?>/?)(?:[^pP]|[pP][^\\s>/])[^>]*>",
+			"</P>(.*?)<P>",
+			"<\\P>",
+			"ImageData",
+			"oneLink",
+			"\\ \\ ",
+			"([\\S]*?),",
+			"\\n",
+			"\\n{2,20}",
+			"\\ ",
+			"shadow",
+			"0.71",
+			"18",
+			"shadow",
+			".home-link",
+			"header",
+			"no-repeat scroll top"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"$1,--$2",
+			"€  $1,--$2",
+			"€  $1",
+			"",
+			"\"$1.jpg\", \\n",
+			"",
+			"\\n",
+			".jpg ",
+			"",
+			"\\n",
+			"\\ ",
+			"\"$1\", ",
+			"$1, ",
+			", ",
+			"\\n",
+			".jpg\\n",
+			"// set_label",
+			"\"$2\",$1$2$3$4\\n",
+			"\"$2\",$1$2$3\\n",
+			"\"$2\",$1$2$3$4\\n",
+			"\"$2\",$1$2$3$4$\\n",
+			"\"$2\",$1$2$3$4$5\\n",
+			"\"$2\",$1$2$3\\n",
+			",\\n",
+			"\",",
+			"setdur_data.fps",
+			"setdur_data.include_precomps",
+			"setdur_data.seconds",
+			"setdur_data.frames",
+			"setdur_data.duration",
+			"{\"title\":\"$1\",\"id\":$2},\\n",
+			"{\"title\":\"$1\",\"id\":$2}\\n",
+			"{\"title\":\"$1\",\"id\",$2}\\n",
+			"/*$1*/\\n",
+			"/*$1*/",
+			"$1$2$3\\n",
+			"$1$2$3",
+			"",
+			"$1\\n",
+			"",
+			"\\n$1",
+			"",
+			"$2",
+			"\"$1\",",
+			"\"$1\",$2",
+			"\"$1\",",
+			"SAIM",
+			"SAMPLEIMAGE",
+			"SampleImage",
+			"SAMPLEIMAGE",
+			"SampleIMage",
+			"",
+			"$2$1$2",
+			"$1,10$2",
+			"IOTWO",
+			"IOTwo",
+			"[$2]($1)",
+			"\\i(100,-10)",
+			" --> Freigegeben\\n",
+			"\"",
+			"[$1]($2)\\n",
+			"[]($1)$2",
+			"$1,",
+			"$1",
+			"$1,$2",
+			"$1 - $2",
+			"<h2>$1</h2>",
+			"$1dict['$2'] = self.$2$3",
+			"$1 --",
+			"$1 -- $2",
+			"'$1'$2",
+			"$1,",
+			"$1",
+			"$1<h2>$2</h2>$3",
+			"&uuml;",
+			"\\n",
+			"$2",
+			"\\n",
+			"$2",
+			"",
+			"\\n",
+			"$2",
+			"\\n",
+			"-- ",
+			"-",
+			"$1,$2,$3\\n",
+			"$1,$2,$3",
+			"$1$2$3",
+			"$1 - $3",
+			"$1 - $2",
+			"\\n\";",
+			"\"",
+			"/* This is black on creation */",
+			"![$1](assets/images/teaser$3)",
+			"###[$1]()  ",
+			"](https://raw.github.com/fabiantheblind/auto-typo-adbe-id/master/Flave/",
+			"[$1]($1.jsx)  ",
+			"[]($1.jsx)  ",
+			"[$1]($1.jsx)  ",
+			"",
+			"    ",
+			"assets",
+			"tf",
+			"fontsz_normal",
+			"span6",
+			"span12",
+			"",
+			"offset1",
+			"span10",
+			"\\\"",
+			"Gisel",
+			",",
+			":",
+			"\\\\n\"+\"",
+			"\\n\"+\"",
+			"meta.unique_ctrlname",
+			"meta.basectrlname",
+			"wihihihiggle",
+			"\n",
+			"'\"+ meta.ctrlname +\"'",
+			"\"+ meta.ctrlname +\"",
+			"'",
+			" ",
+			"",
+			"asset",
+			"",
+			"content",
+			"/MT4D"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.aaa_package_dev":
+	{
+		"height": 118.0
+	},
+	"output.exec":
+	{
+		"height": 350.0
+	},
+	"output.find_results":
+	{
+		"height": 361.0
+	},
+	"output.git":
+	{
+		"height": 118.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/fabiantheblind/Desktop/swissd demo/fonts.txt"
+			],
+			[
+				"inc",
+				"/Applications/Adobe InDesign CS6/Scripts/Scripts Panel/auto-typo-adbe-id/fabiantheblind/includeme.jsx"
+			],
+			[
+				"ir",
+				"/Applications/Adobe InDesign CS6/Scripts/Scripts Panel/auto-typo-adbe-id/fabiantheblind/iris.jsx"
+			],
+			[
+				"ove",
+				"/Applications/Adobe InDesign CS6/Scripts/Scripts Panel/auto-typo-adbe-id/fabiantheblind/scale_till_overflow.jsx"
+			],
+			[
+				"over",
+				"/Applications/Adobe InDesign CS6/Scripts/Scripts Panel/auto-typo-adbe-id/fabiantheblind/scale_till_overflow.jsx"
+			],
+			[
+				"dela",
+				"/Applications/Adobe InDesign CS6/Scripts/Scripts Panel/auto-typo-adbe-id/fabiantheblind/Delay-And-View.jsx"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/fabiantheblind/Documents/_projects/gut-ankelohe/wordpress/wp-content/themes/motrton-two/motrton-two.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 254.0,
+	"status_bar_visible": true
+}

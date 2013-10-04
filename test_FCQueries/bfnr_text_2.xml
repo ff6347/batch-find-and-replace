@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Query>
+<Header>
+<Version major="5" minor="1">
+</Version>
+<Application value="Adobe InDesign">
+</Application>
+<QueryType value="Text" qid="0">
+</QueryType>
+</Header>
+<Description>
+<FindString value="Lorem">
+</FindString>
+<ReplaceString value="Fnord">
+</ReplaceString>
+<FindChangeOptions>
+<IncludeLockedLayers value="0">
+</IncludeLockedLayers>
+<IncludeLockedStories value="0">
+</IncludeLockedStories>
+<IncludeMasterPages value="0">
+</IncludeMasterPages>
+<IncludeHiddenLayers value="0">
+</IncludeHiddenLayers>
+<IncludeFootnotes value="1">
+</IncludeFootnotes>
+<CaseSensitive value="0">
+</CaseSensitive>
+<EntireWord value="0">
+</EntireWord>
+<KanaSensitive value="1">
+</KanaSensitive>
+<WidthSensitive value="1">
+</WidthSensitive>
+<Kashidas value="1">
+</Kashidas>
+<Diacritics value="0">
+</Diacritics>
+</FindChangeOptions>
+<FindFormatSettings>
+</FindFormatSettings>
+<ReplaceFormatSettings>
+<TextAttribute type="changecondmode" value="0">
+</TextAttribute>
+</ReplaceFormatSettings>
+</Description>
+</Query>

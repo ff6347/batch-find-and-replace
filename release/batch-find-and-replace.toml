@@ -5,6 +5,7 @@ do_grep = true
 do_glyph = true
 do_object = false
 do_all_docs = true
+selection_mode = true
 # now the file names
 # they have to be in one line
 # the toml specs say you can break lines in arrays
