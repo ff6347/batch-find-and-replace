@@ -296,7 +296,7 @@ getVal = function(valStr, strTokens) {
                 if (indexOnArray2 < 0) {
                     // added, try to match with a removed item and register as position move
                     var isMove = false;
-                    if (jdp.config.detectArrayMove) {                        
+                    if (jdp.config.detectArrayMove) {
                         if (removedItemsLength > 0) {
                             for (index1 = 0; index1 < removedItemsLength; index1++) {
                                 if (areTheSameByIndex(removedItems[index1], index)) {
@@ -475,7 +475,7 @@ getVal = function(valStr, strTokens) {
             var len1 = array1.length;
             var len2 = array2.length;
             var x, y;
-            
+
             // initialize empty matrix of len1+1 x len2+1
             var matrix = [len1 + 1];
             for (x = 0; x < len1 + 1; x++) {
@@ -535,10 +535,10 @@ getVal = function(valStr, strTokens) {
         }
         return value;
     };
-    
+
     var diff_match_patch_autoconfig = function(){
         var dmp;
-        
+
         if (jdp.config.diff_match_patch) {
             dmp = new jdp.config.diff_match_patch.diff_match_patch();
         }
@@ -550,7 +550,7 @@ getVal = function(valStr, strTokens) {
                 dmp = new diff_match_patch.diff_match_patch();
             }
         }
-        
+
         if (dmp) {
             jdp.config.textDiff = function(txt1, txt2){
                 return dmp.patch_toText(dmp.patch_make(txt1, txt2));
@@ -585,11 +585,11 @@ getVal = function(valStr, strTokens) {
     };
 
     var objectDiff = function(o, n){
-    
+
         var odiff, pdiff, prop, addPropDiff;
-        
+
         addPropDiff = function(name){
-            
+
             pdiff = diff(o[name], n[name]);
             if (typeof pdiff != 'undefined') {
                 if (typeof odiff == 'undefined') {
@@ -598,7 +598,7 @@ getVal = function(valStr, strTokens) {
                 odiff[name] = pdiff;
             }
         };
-        
+
         for (prop in n) {
             if (n.hasOwnProperty(prop)) {
                 addPropDiff(prop);
@@ -613,10 +613,10 @@ getVal = function(valStr, strTokens) {
         }
         return odiff;
     };
-    
+
     var diff = jdp.diff = function(o, n){
         var ntype, otype, nnull, onull, d;
-        
+
         if (o === n) {
             return;
         }
@@ -641,7 +641,7 @@ getVal = function(valStr, strTokens) {
                 }
             }
         }
-        
+
         if (nnull || onull || ntype == 'undefined' || ntype != otype ||
         ntype == 'number' ||
         otype == 'number' ||
@@ -693,16 +693,16 @@ getVal = function(valStr, strTokens) {
             }
         }
     };
-    
+
     var objectGet = function(obj, key){
         if (isArray(obj)) {
             return obj[parseInt(key, 10)];
         }
         return obj[key];
     };
-    
+
     jdp.getByKey = objectGet;
-    
+
     var objectSet = function(obj, key, value){
         if (isArray(obj) && obj._key) {
             var getKey = obj._key;
@@ -906,11 +906,11 @@ getVal = function(valStr, strTokens) {
         }
         return d;
     };
-    
+
     var patch = jdp.patch = function(o, pname, d, path) {
-    
+
         var p, nvalue, subpath = '', target;
-        
+
         if (typeof pname != 'string') {
             path = d;
             d = pname;
@@ -921,7 +921,7 @@ getVal = function(valStr, strTokens) {
                 pname = null;
             }
         }
-        
+
         if (path) {
             subpath += path;
         }
@@ -929,7 +929,7 @@ getVal = function(valStr, strTokens) {
         if (pname !== null) {
             subpath += pname;
         }
-        
+
         if (typeof d == 'object') {
             if (isArray(d)) {
                 // changed value
@@ -1012,19 +1012,19 @@ getVal = function(valStr, strTokens) {
                 }
             }
         }
-        
+
         return o;
     };
 
     var unpatch = jdp.unpatch = function(o, pname, d, path){
-        
+
         if (typeof pname != 'string') {
             return patch(o, reverse(pname), d);
         }
 
         return patch(o, pname, reverse(d), path);
     };
-    
+
     if (typeof require === 'function' && typeof exports === 'object' && typeof module === 'object') {
         // CommonJS, eg: node.js
         module.exports = jdp;
@@ -1045,9 +1045,9 @@ getVal = function(valStr, strTokens) {
 function bfnr_run() {
   var path = ((File($.fileName)).path);
 
-  $.evalFile(File(path + '/submodules/tomljs/toml.js')); // https://github.com/JonAbrams/tomljs
+  // $.evalFile(File(path + '/submodules/tomljs/toml.js')); // https://github.com/JonAbrams/tomljs
 
-  $.evalFile(File(path + '/submodules/JsonDiffPatch/src/jsondiffpatch.js')); // https://github.
+  // $.evalFile(File(path + '/submodules/JsonDiffPatch/src/jsondiffpatch.js')); // https://github.
 
   /**
    * the settings
@@ -1154,6 +1154,9 @@ function processor(doc, mode, list, title, bfnr) {
       if (mode == SearchModes.TEXT_SEARCH) {
         if (doc.selection.length > 0) {
           for (var j = 0; j < doc.selection.length; j++) {
+            if(!(doc.selection[j].hasOwnProperty('changeText'))){
+              continue;
+            }
             var sel_item_text = doc.selection[j];
             sel_item_text.changeText();
           }
@@ -1171,6 +1174,9 @@ function processor(doc, mode, list, title, bfnr) {
 
         if (doc.selection.length > 0) {
           for (var k = 0; k < doc.selection.length; k++) {
+            if(!(doc.selection[k].hasOwnProperty('changeGrep'))){
+              continue;
+            }
             var sel_item_grep = doc.selection[k];
             sel_item_grep.changeGrep();
 
@@ -1189,6 +1195,9 @@ function processor(doc, mode, list, title, bfnr) {
 
         if (doc.selection.length > 0) {
           for (var l = 0; l < doc.selection.length; l++) {
+            if(!(doc.selection[l].hasOwnProperty('changeObject'))){
+              continue;
+            }
             var sel_item_obj = doc.selection[l];
 
             sel_item_obj.changeObject();
@@ -1209,6 +1218,9 @@ function processor(doc, mode, list, title, bfnr) {
 
         if (doc.selection.length > 0) {
           for (var m = 0; m < doc.selection.length; m++) {
+            if(!(doc.selection[m].hasOwnProperty('changeGlyph'))){
+              continue;
+            }
             var sel_item_glyph = doc.selection[m];
 
             sel_item_glyph.changeGlyph();

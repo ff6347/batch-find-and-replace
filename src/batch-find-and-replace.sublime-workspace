@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"changeG",
+				"changeGlyph"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"se",
+				"selection"
+			],
+			[
 				"exp",
 				"exporter_data"
 			],
@@ -502,18 +514,6 @@
 			[
 				"pat",
 				"patch_data"
-			],
-			[
-				"run_",
-				"run_render_frame_at_marker"
-			],
-			[
-				"rea",
-				"read_db"
-			],
-			[
-				"win",
-				"window"
 			]
 		]
 	},
@@ -523,9 +523,17 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 207.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"be",
+				"Javascript Beautify"
+			],
+			[
+				"ter",
+				"Open in terminal"
+			],
 			[
 				"csv",
 				"Set Syntax: CSV"
@@ -543,20 +551,12 @@
 				"Snippet: MIT JSX License Code"
 			],
 			[
-				"be",
-				"Javascript Beautify"
-			],
-			[
 				"ano",
 				"Snippet: enclose in anonymous function"
 			],
 			[
 				"ex",
 				"Set Syntax: ExtendScript"
-			],
-			[
-				"ter",
-				"Open in terminal"
 			],
 			[
 				"gist",
@@ -1039,7 +1039,7 @@
 				"z:AAAPackageDev: JSON to Property List"
 			]
 		],
-		"width": 647.0
+		"width": 865.0
 	},
 	"console":
 	{
@@ -1056,7 +1056,16 @@
 	},
 	"file_history":
 	[
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/batch-find-and-replace/src/cat_for_release.sh",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/batch-find-and-replace/src/batch-find-and-replace.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/batch-find-and-replace/release/batch-find-and-replace.toml",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/batch-find-and-replace/src/bfnr_function.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/batch-find-and-replace/src/batch-find-and-replace.toml",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/batch-find-and-replace/release/batch-find-and-replace.jsx",
 		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/batch-find-and-replace/src/bfnr_head.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/batch-find-and-replace/release/batch-find-and-replace.toml",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/batch-find-and-replace/src/bfnr_function.jsx",
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/batch-find-and-replace.toml",
 		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/Guides/screencasts-grafik.html",
 		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/MPO-Importer.jsx",
 		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/PDF-Export.jsx",
@@ -1161,7 +1170,6 @@
 		"/Users/fabiantheblind/Library/Application Support/Sublime Text 2/Packages/js-beautify-sublime/jsbeautify.py",
 		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace/justpa_s210_lspaketeampportable_komplett_08230930.xml",
 		"/Users/fabiantheblind/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css",
-		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/batch-find-and-replace.toml",
 		"/Users/fabiantheblind/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace/justdj_s244_4deckdjcontroller_teil_08221933.xml",
 		"/Users/fabiantheblind/Library/Application Support/Sublime Text 2/Packages/User/ftb-sublime-package/comment line.sublime-snippet",
@@ -1175,15 +1183,7 @@
 		"/Applications/Adobe InDesign CS6/Scripts/Scripts Panel/mpo-id-tools/meta/glue code.jsx",
 		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace/justpa_s206_aktivepalautsprecher_komplett_08212237.json",
 		"/Users/fabiantheblind/Documents/_projects/just-music/jm-katalog-2014/katalog-workspace/justpa_s206_aktivepalautsprecher_komplett_08212208.xml",
-		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/meta/processXML_v02.jsx",
-		"/Users/fabiantheblind/Desktop/ankelohe-infos.txt",
-		"/Applications/Adobe InDesign CC/Scripts/XML Rules/glue code.jsx",
-		"/Applications/Adobe InDesign CS5/Scripts/Scripts Panel/vFFF/latest/process/glue code.jsx",
-		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/meta/glue code.jsx",
-		"/Users/fabiantheblind/Documents/_projects/gut-ankelohe/wordpress/wp-content/themes/ankelohe/page-ankelohe.php",
-		"/Users/fabiantheblind/Documents/_projects/gut-ankelohe/wordpress/wp-content/themes/ankelohe/page.php",
-		"/Users/fabiantheblind/Documents/_projects/gut-ankelohe/wordpress/wp-content/themes/ankelohe/header.php",
-		"/Users/fabiantheblind/Documents/_projects/gut-ankelohe/wordpress/wp-content/themes/ankelohe/assets/less/gallery-overwrite.less"
+		"/Applications/Adobe InDesign CC/Scripts/Scripts Panel/mpo-id-tools/meta/processXML_v02.jsx"
 	],
 	"find":
 	{
@@ -1217,6 +1217,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"    // empty_fc_fields(mode);",
+			"    // if(bfnr.settings.selection_mode === true){",
+			"          // empty_fc_fields(mode);",
+			"if(bfnr.settings.selection_mode === true){",
+			"processor",
+			"sel_item",
+			"j",
 			",",
 			"// ",
 			"//",
@@ -1337,14 +1344,7 @@
 			"([\\S]*?),",
 			"\\n",
 			"\\n{2,20}",
-			"\\ ",
-			"shadow",
-			"0.71",
-			"18",
-			"shadow",
-			".home-link",
-			"header",
-			"no-repeat scroll top"
+			"\\ "
 		],
 		"highlight": true,
 		"in_selection": false,
