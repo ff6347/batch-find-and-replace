@@ -126,7 +126,7 @@ function processor(doc, mode, list, title, bfnr) {
         }
       }
     } catch (e) {
-      alert('There was an error while processing the changeText command\n' + e);
+      // alert('There was an error while processing the changeText command\n' + e);
     }
     try {
 
@@ -147,7 +147,7 @@ function processor(doc, mode, list, title, bfnr) {
         }
       }
     } catch (e) {
-      alert('There was an error while processing the changeGrep command\n' + e);
+      // alert('There was an error while processing the changeGrep command\n' + e);
     }
     try {
 
@@ -169,8 +169,8 @@ function processor(doc, mode, list, title, bfnr) {
 
       }
     } catch (e) {
-      alert('There was an error while processing the changeObject command\n' +
-        e);
+      // alert('There was an error while processing the changeObject command\n' +
+      //   e);
     }
     try {
 
@@ -191,7 +191,7 @@ function processor(doc, mode, list, title, bfnr) {
         }
       }
     } catch (e) {
-      alert('There was an error while processing the changeGlyph command\n' + e);
+      // alert('There was an error while processing the changeGlyph command\n' + e);
     }
     progress.value = (i + 1);
   }
