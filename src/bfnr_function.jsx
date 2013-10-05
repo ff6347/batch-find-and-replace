@@ -3,12 +3,11 @@
  * @return {[type]} [description]
  */
 
+try{
+#include 'includes.jsx';
+  }catch(e){}
 function bfnr_run() {
-  var path = ((File($.fileName)).path);
-
-  $.evalFile(File(path + '/submodules/tomljs/toml.js')); // https://github.com/JonAbrams/tomljs
-
-  $.evalFile(File(path + '/submodules/JsonDiffPatch/src/jsondiffpatch.js')); // https://github.
+  var thisfilepath = ((File($.fileName)).path);
 
   /**
    * the settings
@@ -26,7 +25,7 @@ function bfnr_run() {
     }
   };
   // lets get the data
-  var tomltxt = readfile('toml', path);
+  var tomltxt = readfile('toml', thisfilepath);
   if (tomltxt !== null) {
     // diff and patch the settings
     //
