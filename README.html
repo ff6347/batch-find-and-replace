@@ -1,0 +1,236 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body{
+  color:#444;
+  font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman',
+              "Hiragino Sans GB", "STXihei", "微软雅黑", serif;
+  font-size:12px;
+  line-height:1.5em;
+  background:#fefefe;
+  width: 45em;
+  margin: 10px auto;
+  padding: 1em;
+  outline: 1300px solid #FAFAFA;
+}
+
+a{ color: #0645ad; text-decoration:none;}
+a:visited{ color: #0b0080; }
+a:hover{ color: #06e; }
+a:active{ color:#faa700; }
+a:focus{ outline: thin dotted; }
+a:hover, a:active{ outline: 0; }
+
+span.backtick {
+  border:1px solid #EAEAEA;
+  border-radius:3px;
+  background:#F8F8F8;
+  padding:0 3px 0 3px;
+}
+
+::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+::selection{background:rgba(255,255,0,0.3);color:#000}
+
+a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
+a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
+
+p{
+margin:1em 0;
+}
+
+img{
+max-width:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+font-weight:normal;
+color:#111;
+line-height:1em;
+}
+h4,h5,h6{ font-weight: bold; }
+h1{ font-size:2.5em; }
+h2{ font-size:2em; border-bottom:1px solid silver; padding-bottom: 5px; }
+h3{ font-size:1.5em; }
+h4{ font-size:1.2em; }
+h5{ font-size:1em; }
+h6{ font-size:0.9em; }
+
+blockquote{
+color:#666666;
+margin:0;
+padding-left: 3em;
+border-left: 0.5em #EEE solid;
+}
+hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
+
+
+pre , code, kbd, samp { 
+  color: #000; 
+  font-family: monospace; 
+  font-size: 0.88em; 
+  border-radius:3px;
+  background-color: #F8F8F8;
+  border: 1px solid #CCC; 
+}
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 5px 12px;}
+pre code { border: 0px !important; padding: 0;}
+code { padding: 0 3px 0 3px; }
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
+li p:last-child { margin:0 }
+dd { margin: 0 0 0 2em; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+@media only screen and (min-width: 480px) {
+body{font-size:14px;}
+}
+
+@media only screen and (min-width: 768px) {
+body{font-size:16px;}
+}
+
+@media print {
+  * { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; }
+  body{font-size:12pt; max-width:100%; outline:none;}
+  a, a:visited { text-decoration: underline; }
+  hr { height: 1px; border:0; border-bottom:1px solid black; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; padding-right: 1em; page-break-inside: avoid; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page :left { margin: 15mm 20mm 15mm 10mm; }
+  @page :right { margin: 15mm 10mm 15mm 20mm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+</style><title>README</title></head><body><h1 id="batch-find-and-replace">batch-find-and-replace</h1>
+<p>This is a Adobe InDesign script for batch processing find and replace xmls. You can process
+GREP, TEXT, GLYPH and OBJECT searches.<br />
+@author: fabiantheblind<br />
+@version: 0.1.3</p>
+<p>Thanks go to: <br />
+- <a href="https://github.com/mojombo/toml">Tom's Obvious, Minimal Language</a> By <a href="https://github.com/mojombo">Tom Preston-Werner</a><br />
+- <a href="https://github.com/JonAbrams/tomljs">toml.js</a> by <a href="https://github.com/JonAbrams">JonAbrams</a><br />
+- <a href="https://github.com/benjamine/JsonDiffPatch">JsonDiffPatch.js</a> by <a href="https://github.com/benjamine">benjamine</a>   </p>
+<p>Without these three open source projects this would not be possible.</p>
+<h2 id="purpouse">Purpouse</h2>
+<p>While creating books in InDesign with several documents we always come across some find change queries that need to be used again, and again, and again. To make this process easier you can just grab their names and put them into a list. The script will than try to precess all your queries in one click.  </p>
+<h2 id="files">files</h2>
+<p>In the folder <strong>release</strong> you can find the full script (batch-find-and-replace.jsx) with the libraries enclosed and an example toml file (batch-find-and-replace.toml). This is all you need to get started right away. Place them both into your <a href="http://help.adobe.com/en_US/indesign/cs/using/WS0836C26E-79F9-4c8f-8150-C36260164A87a.html#WSDCB06999-2544-48c9-B348-888301FC6BA0a">Scripts Panel</a>  </p>
+<h2 id="develop">develop</h2>
+<p>If you want to develop on this project clone it with git</p>
+<pre><code>git clone git://github.com/fabiantheblind/batch-find-and-replace.git
+</code></pre>
+<p>In the <strong>src</strong> folder you will find the development files. The libraries are external and enclosed in the repository as submodules. If you want to set up these you have to run first:  </p>
+<pre><code>git submodule init
+</code></pre>
+<p>Than update the submodules with  </p>
+<pre><code>git submodule update
+</code></pre>
+<p>See the progit documentation on submodules <a href="http://git-scm.com/book/ch6-6.html">here</a>.</p>
+<p>Install <a href="https://gist.github.com/isaacs/579814">nodejs and npm</a> the way you like it.  </p>
+<p>To build the release script with all files put together I use <a href="http://gruntjs.com/">grunt</a>  </p>
+<p>You need nodejs installed. Then run</p>
+<pre><code>npm install
+</code></pre>
+<p>This should install grunt locally for you.<br />
+in the root of the project.<br />
+Then run grunt  </p>
+<pre><code>grunt
+</code></pre>
+<p>This should build the whole script into the build folder.  </p>
+<h2 id="prerequisites">prerequisites</h2>
+<ol>
+<li>make sure you have a toml file.</li>
+<li>make sure the toml file is next to the script.</li>
+<li>make sure the toml file has the right formatting (see below in section TOML)</li>
+<li>if you want the script to autoexecute (without toml file selection), make sure the .toml file has the right name: "batch-find-and-replace.toml"</li>
+<li>make sure your fcqueries work right </li>
+</ol>
+<h2 id="usage">Usage</h2>
+<ul>
+<li>Place the script and the toml file into your <a href="http://help.adobe.com/en_US/indesign/cs/using/WS0836C26E-79F9-4c8f-8150-C36260164A87a.html#WSDCB06999-2544-48c9-B348-888301FC6BA0a">Scripts Panel Folder</a>  </li>
+<li>define some find and change queries and save them via the <a href="http://help.adobe.com/en_US/indesign/cs/using/WSFB3603CC-8D84-48d8-9F77-F3E0644CB0B6a.html#WS293D91C6-1153-4f92-A260-24B1A59E10B4a">InDesign dialogue</a>.</li>
+<li>get the xml file names and add them to the <strong>"batch-find-and-replace.toml"</strong> file in the right spot. text search goes into <code>text.files = []</code>, grep search goes into <code>grep.files = []</code> and so on. Make shure to remove the .xml from the filename. You can find these files on:</li>
+<li>
+<ul>
+<li><strong>Mac OS</strong> Users[username]\Library\Preferences\Adobe InDesign[Version][Language]\Find-Change Queries[query type]  </li>
+</ul>
+</li>
+<li>
+<ul>
+<li><strong>Windows XP</strong> Documents and Settings[username]\Application Data\Adobe\InDesign[Version][Language]\Find-Change Queries[query type]  </li>
+</ul>
+</li>
+<li>
+<ul>
+<li><strong>Windows Vista and Windows 7</strong> Users[username]\AppData\Roaming\Adobe\InDesign[Version][Language]\Find-Change Queries[query type]  </li>
+</ul>
+</li>
+<li>the .toml file should be located next to the script file and have the  appropriate name (batch-find-and-replace.toml). If so the script wont ask for the toml file and process the data right away. If not the script will ask you to select the .toml file.</li>
+<li>Thats it. Watch the magick happen.</li>
+</ul>
+<h2 id="toml">TOML</h2>
+<p><a href="https://github.com/mojombo/toml">Tom's Obvious, Minimal Language</a> is a simple markup language that makes settings human readable. It is still in development and may change a lot. But still. It is a pretty easy language and can be learned by anyone.<br />
+The basic toml filer looks like this:  </p>
+<pre><code># these are the basic settings
+# the MUST be there
+do_text = true
+do_grep = true
+do_glyph = true
+do_object = false
+do_all_docs = true
+# now the file names
+# they have to be in one line
+# the toml specs say you can break lines in arrays
+# but the toml.js does not allow that at the moment
+[text]
+files = ["my_first_text_find_and_change","another one"]
+[grep]
+files = ["somegrepsearch", "find tabs", "something else"]
+[glyph]
+files = []
+[objects]
+files = []
+</code></pre>
+<h3 id="must-have-settings">MUST HAVE Settings</h3>
+<p>With the <code>do_text</code>, <code>do_object</code>, <code>do_grep</code> and <code>do_glyph</code> you can define if the script should do the corresponding find and replace. Set them to <code>true</code> or <code>false</code>.<br />
+With the <code>do_all_docs</code> setting you can define to use just the front most document or all open documents. Set it to <code>true</code> if you want to process all open documents.  </p>
+<h3 id="can-have-settings">CAN HAVE Settings</h3>
+<p>In the <code>[text]</code>,<code>[grep]</code>,<code>[glyph]</code> and <code>[objects]</code> areas you can define the filenames that should be processed. Make sure the filenames are written right. If there is a file mentioned that does not exist the script will throw an error. It will try to process all the .xml files it can find. <strong>!IMPORTANT!</strong> you MUST remove the .xml from the filename in the list as shown above.</p>
+<h2 id="faq">FAQ</h2>
+<p>Nothing yet. Feel free to ask and report issues ;)  </p>
+<h2 id="version-history">Version History</h2>
+<ul>
+<li>0.1.1 Added do all docs feature  </li>
+<li>0.1 initial release  </li>
+</ul>
+<h2 id="to-dos">To Dos</h2>
+<ul>
+<li>Make it work with InDesign Books or an folder of InDesign docs.  </li>
+<li>add support for several docs</li>
+</ul>
+<h2 id="license">License</h2>
+<p>All code is under MIT License
+Copyright (c)  2013 Fabian "fabiantheblind" Morón Zirfas<br />
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software  without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to  permit persons to whom the Software is furnished to do so, subject to the following conditions:<br />
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br />
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A  PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF  CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.  </p>
+<p>see also http://www.opensource.org/licenses/mit-license.php</p></body></html>

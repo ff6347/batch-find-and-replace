@@ -4,7 +4,7 @@ batch-find-and-replace
 This is a Adobe InDesign script for batch processing find and replace xmls. You can process
 GREP, TEXT, GLYPH and OBJECT searches.  
 @author: fabiantheblind  
-@version: 0.1.1
+@version: 0.1.3
 
 Thanks go to:   
 - [Tom's Obvious, Minimal Language](https://github.com/mojombo/toml) By [Tom Preston-Werner](https://github.com/mojombo)  
@@ -18,33 +18,6 @@ While creating books in InDesign with several documents we always come across so
 
 ##files  
 In the folder __release__ you can find the full script (batch-find-and-replace.jsx) with the libraries enclosed and an example toml file (batch-find-and-replace.toml). This is all you need to get started right away. Place them both into your [Scripts Panel](http://help.adobe.com/en_US/indesign/cs/using/WS0836C26E-79F9-4c8f-8150-C36260164A87a.html#WSDCB06999-2544-48c9-B348-888301FC6BA0a)  
-
-If you want to develop on this project clone it with git
-
-    git clone git://github.com/fabiantheblind/batch-find-and-replace.git  
-
-In the __src__ folder you will find the development files. The libraries are external and enclosed in the repository as submodules. If you want to set up these you have to run first:  
-
-    git submodule init  
-
-Than update the submodules with  
-
-    git submodule update  
-
-See the progit documentation on submodules [here](http://git-scm.com/book/ch6-6.html).
-
-To build the release script with all files but together use [grunt](http://gruntjs.com/)  
-
-You need nodejs installed. Then run
-
-    npm install   
-
-in the root of the project.  
-Then run grunt   
-
-    grunt  
-
-This should build the whole script into the build folder.  
 
 ##prerequisites
 1. make sure you have a toml file.
@@ -106,6 +79,40 @@ Nothing yet. Feel free to ask and report issues ;)
 
 - Make it work with InDesign Books or an folder of InDesign docs.  
 - add support for several docs
+
+
+##develop  
+
+If you want to develop on this project fork it or clone it with git
+
+    git clone https://github.com/fabiantheblind/batch-find-and-replace.git
+    cd batch-find-and-replace
+
+
+In the __src__ folder you will find the development files. The libraries are external and enclosed in the repository as submodules. If you want to set up these you have to run first:  
+
+    git submodule init  
+
+Than update the submodules with  
+
+    git submodule update  
+
+See the progit documentation on submodules [here](http://git-scm.com/book/ch6-6.html).
+
+Install [nodejs and npm](https://gist.github.com/isaacs/579814) the way you like it.  
+
+To build the release script with all files put together I use [grunt](http://gruntjs.com/). install this as well.  
+
+Then run
+
+    npm install   
+    
+in the root of the project.  
+Then run grunt  
+
+    grunt  
+
+This should build the whole script into the __build__ folder.  
 
 ##License
 All code is under MIT License
