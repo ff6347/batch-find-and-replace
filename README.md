@@ -33,6 +33,19 @@ Than update the submodules with
 
 See the progit documentation on submodules [here](http://git-scm.com/book/ch6-6.html).
 
+To build the release script with all files but together use [grunt](http://gruntjs.com/)  
+
+You need nodejs installed. Then run
+
+    npm install   
+
+in the root of the project.  
+Then run grunt   
+
+    grunt  
+
+This should build the whole script into the build folder.  
+
 ##prerequisites
 1. make sure you have a toml file.
 2. make sure the toml file is next to the script.
