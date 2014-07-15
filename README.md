@@ -4,7 +4,9 @@ batch-find-and-replace
 This is a Adobe InDesign script for batch processing find and replace xmls. You can process
 GREP, TEXT, GLYPH and OBJECT searches.  
 @author: fabiantheblind  
-@version: 0.1.4
+@version: 0.1.4  
+
+I know people don't want to read a lot - so here is a direct link to the [release package of version 0.1.4](https://github.com/fabiantheblind/batch-find-and-replace/releases/download/v0.1.4/batch-find-and-replace.v0.1.4.zip)
 
 Thanks go to:   
 - [Tom's Obvious, Minimal Language](https://github.com/mojombo/toml) By [Tom Preston-Werner](https://github.com/mojombo)  
@@ -115,11 +117,15 @@ Then run grunt
 
     grunt  
 
-This should build the whole script into the __build__ folder.  
+This should build the whole script into the __dist__ folder.  
+
+    grunt dev  
+
+This should run a watch task and compile your script everytime you change something.  
 
 ##License
 All code is under MIT License
-Copyright (c)  2013 Fabian "fabiantheblind" Morón Zirfas  
+Copyright (c)  2013 - 2014 Fabian "fabiantheblind" Morón Zirfas  
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software  without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to  permit persons to whom the Software is furnished to do so, subject to the following conditions:  
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A  PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF  CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.  
