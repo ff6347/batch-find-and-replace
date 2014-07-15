@@ -235,7 +235,7 @@ function empty_fc_fields(mode) {
   }
   if (mode == SearchModes.GREP_SEARCH) {
 
-    app.findGrepPreferencess = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
+    app.findGrepPreferences = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
     app.changeGrepPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
 
   }

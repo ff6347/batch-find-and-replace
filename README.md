@@ -4,7 +4,7 @@ batch-find-and-replace
 This is a Adobe InDesign script for batch processing find and replace xmls. You can process
 GREP, TEXT, GLYPH and OBJECT searches.  
 @author: fabiantheblind  
-@version: 0.1.3
+@version: 0.1.4
 
 Thanks go to:   
 - [Tom's Obvious, Minimal Language](https://github.com/mojombo/toml) By [Tom Preston-Werner](https://github.com/mojombo)  
@@ -17,7 +17,7 @@ Without these three open source projects this would not be possible.
 While creating books in InDesign with several documents we always come across some find change queries that need to be used again, and again, and again. To make this process easier you can just grab their names and put them into a list. The script will than try to precess all your queries in one click.  
 
 ##files  
-In the folder __release__ you can find the full script (batch-find-and-replace.jsx) with the libraries enclosed and an example toml file (batch-find-and-replace.toml). This is all you need to get started right away. Place them both into your [Scripts Panel](http://help.adobe.com/en_US/indesign/cs/using/WS0836C26E-79F9-4c8f-8150-C36260164A87a.html#WSDCB06999-2544-48c9-B348-888301FC6BA0a)  
+In the folder __dist__ you can find the full script (batch-find-and-replace.jsx) with the libraries enclosed and an example toml file (batch-find-and-replace.toml). This is all you need to get started right away. Place them both into your [Scripts Panel](http://help.adobe.com/en_US/indesign/cs/using/WS0836C26E-79F9-4c8f-8150-C36260164A87a.html#WSDCB06999-2544-48c9-B348-888301FC6BA0a)  
 
 ##prerequisites
 1. make sure you have a toml file.
@@ -71,7 +71,10 @@ In the `[text]`,`[grep]`,`[glyph]` and `[objects]` areas you can define the file
 Nothing yet. Feel free to ask and report issues ;)  
 
 ##Version History  
-
+- 0.1.4 fixed typo. Do all docs can hang itself when having to many files
+- - maybe we should switch to book usage instead
+- 0.1.3 working on do all docs. more grunt
+- 0.1.2 working on do all docs. added grunt
 - 0.1.1 Added do all docs feature  
 - 0.1 initial release  
 

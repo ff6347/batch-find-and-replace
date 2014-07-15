@@ -1,4 +1,5 @@
 module.exports = function (grunt) {
+  require('load-grunt-tasks')(grunt);
 
   // Project configuration.
   grunt.initConfig({
@@ -11,26 +12,33 @@ module.exports = function (grunt) {
     copy: {
   main: {
     files: [
-      {expand: false, src: ['src/batch-find-and-replace.toml'], dest: 'build/batch-find-and-replace.toml'}, // includes files in path and its subdirs
+      {expand: false, src: ['src/batch-find-and-replace.toml'], dest: 'dist/batch-find-and-replace.toml'}, // includes files in path and its subdirs
     ]
   }
 },
 /* https://github.com/gruntjs/grunt-contrib-concat */
     concat: {
       options: {
-        separator: ';',
+        banner: '\n/*! <%= pkg.name %>.jsx - v<%= pkg.version %> - ' +
+            '<%= grunt.template.today("yyyy-mm-dd") %> */\n',
+        stripBanners: false,
+        separator: '\n',
         process: function (src, filepath) {
           return '// Source: ' + filepath + '\n' +
             src.replace(/#include/g, '//#inlcude');
         },
       },
       basic: {
-        src: ['src/bfnr_head.jsx', 'src/submodules/tomljs/toml.js',
+        src: ['src/bfnr_head.jsx',
+         'src/submodules/tomljs/toml.js',
           'src/submodules/JsonDiffPatch/src/jsondiffpatch.js',
           'src/bfnr_function.jsx'],
-        dest: 'build/batch-find-and-replace.jsx',
-      }
-
+        dest: 'dist/batch-find-and-replace.jsx',
+      },
+    },
+    watch: {
+      files: ['src/*.jsx'],
+      tasks: ['concat:basic', 'copy:main']
     }
   });
 
@@ -39,5 +47,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   // Default task(s).
   grunt.registerTask('default', ['concat','copy']);
+  grunt.registerTask('dev', ['watch']);
 
 };

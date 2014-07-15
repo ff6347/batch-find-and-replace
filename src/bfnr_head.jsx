@@ -1,10 +1,9 @@
-
 /*************************************************
 *
 * This script batch processes InDesign FNR
 *
 ****************************************************
-* Copyright (c)  2013
+* Copyright (c)  2013 - 2014
 * Fabian "fabiantheblind" Morón Zirfas
 * Permission is hereby granted, free of charge, to any
 * person obtaining a copy of this software and associated
