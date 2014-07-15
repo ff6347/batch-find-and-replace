@@ -6,6 +6,25 @@ GREP, TEXT, GLYPH and OBJECT searches.
 @author: fabiantheblind  
 @version: 0.1.4  
 
+<!-- toc -->
+
+* [Download](#download)
+* [Purpouse](#purpouse)
+* [files](#files)
+* [prerequisites](#prerequisites)
+* [Usage](#usage)
+* [TOML](#toml)
+  * [MUST HAVE Settings](#must-have-settings)
+  * [CAN HAVE Settings](#can-have-settings)
+* [FAQ](#faq)
+* [Version History](#version-history)
+* [To Dos](#to-dos)
+* [develop](#develop)
+* [License](#license)
+
+<!-- toc stop -->
+
+##Download  
 I know people don't want to read a lot - so here is a direct link to the [release package of version 0.1.4](https://github.com/fabiantheblind/batch-find-and-replace/releases/download/v0.1.4/batch-find-and-replace.v0.1.4.zip)
 
 Thanks go to:   
@@ -19,7 +38,7 @@ Without these three open source projects this would not be possible.
 While creating books in InDesign with several documents we always come across some find change queries that need to be used again, and again, and again. To make this process easier you can just grab their names and put them into a list. The script will than try to precess all your queries in one click.  
 
 ##files  
-In the folder __dist__ you can find the full script (batch-find-and-replace.jsx) with the libraries enclosed and an example toml file (batch-find-and-replace.toml). This is all you need to get started right away. Place them both into your [Scripts Panel](http://help.adobe.com/en_US/indesign/cs/using/WS0836C26E-79F9-4c8f-8150-C36260164A87a.html#WSDCB06999-2544-48c9-B348-888301FC6BA0a)  
+In the folder __dist__ you can find the full script (batch-find-and-replace.jsx) with the libraries enclosed and an example toml file (batch-find-and-replace.toml) or use the link from the download section. This is all you need to get started right away. Place them both into your [Scripts Panel](http://help.adobe.com/en_US/indesign/cs/using/WS0836C26E-79F9-4c8f-8150-C36260164A87a.html#WSDCB06999-2544-48c9-B348-888301FC6BA0a)  
 
 ##prerequisites
 1. make sure you have a toml file.
