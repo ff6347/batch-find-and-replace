@@ -4,7 +4,7 @@
  */
 
 try{
-#include 'includes.jsx';
+#include 'includes.jsx'; // jshint ignore:line
   }catch(e){}
 function bfnr_run() {
   var thisfilepath = ((File($.fileName)).path);
@@ -235,18 +235,18 @@ function empty_fc_fields(mode) {
   }
   if (mode == SearchModes.GREP_SEARCH) {
 
-    app.findGrepPreferences = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
+    app.findGrepPreferencess = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
     app.changeGrepPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
 
   }
   if (mode == SearchModes.GLYPH_SEARCH) {
-    app.findGlyphPreference = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
+    app.findGlyphPreferences = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
     app.changeGlyphPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
 
   }
 
   if (mode == SearchModes.OBJECT_SEARCH) {
-    app.findObjectPreference = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
+    app.findObjectPreferences = NothingEnum.nothing; // now empty the find what field!!!thats important!!!
     app.changeObjectPreferences = NothingEnum.nothing; // empts the change to field!!!thats important!!!
 
   }
