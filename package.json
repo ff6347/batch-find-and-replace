@@ -25,7 +25,7 @@
     "grunt-contrib-concat": "0.3.0",
     "grunt-contrib-copy": "0.8.2",
     "grunt-wrap": "0.3.1",
-    "grunt-contrib-watch": "0.6.1"
+    "grunt-contrib-watch": "1.1.0"
   },
   "dependencies": {
     "load-grunt-tasks": "^0.6.0"
