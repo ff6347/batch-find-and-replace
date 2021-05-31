@@ -28,6 +28,6 @@
     "grunt-contrib-watch": "0.6.1"
   },
   "dependencies": {
-    "load-grunt-tasks": "^0.6.0"
+    "load-grunt-tasks": "^5.0.0"
   }
 }
